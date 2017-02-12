@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Jquery moves  </title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="/scripts/please.js">
+     
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"> </script>
+
+    <link href="styles/pretty.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript"> 
+        $(function()
+        {
+            $("#child").appendTo("#parent");
+
+            $("#count").click(function () {
+                alert($("p").length);
+            });
+
+            $("#button1").click(function () {
+                alert($("div").length);
+            });
+
+
+            $("#right").click(function () {
+                $(".moving").animate({ "left": "+=50px" }, "slow");
+            });
+
+            $("#left").click(function () {
+                $(".moving").animate({ "left": "-=50px" }, "slow");
+            });
+
+
+
+            })
+    
+    
+     </script>
+
+
+
+
+</head>
+<body>
+
+    <div id="source">
+        <p>  these words are mine </p>
+    </div>
+    <p>  cold water is good to drink on a hot day</p>
+
+
+    <div id="dest">
+        empty
+    </div>
+
+
+    <form id="form1" runat="server">
+
+        <div id="parent">
+            these words are mine
+        </div>
+        <label> parent div here</label>
+        <p>this is not a test!!!!</p>
+
+        <div id="child">
+            child div here..working fine
+        </div>
+
+
+    </form>
+
+    <button id="count">Alert the number of p elements</button>
+
+    <div id="selected">
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+
+    <div id="numbers"></div>
+
+    <div id="iddiv">
+        <span>This is a span</span>
+        <p>This is a Paragraph</p>
+        <button id="button1">Click to see the effect</button>
+    </div>
+
+    <button id="left"><</button>
+    <button id="right">></button>
+    <div class="block">I move a round alot!!!</div>
+
+
+
+</body>
+</html>
