@@ -1,8 +1,6 @@
 ﻿$(document).ready(function () {
-
-
+    
     $("#source").appendTo("#dest");
-
 
 });
 
