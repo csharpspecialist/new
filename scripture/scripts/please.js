@@ -4,17 +4,6 @@
     $("#source").appendTo("#dest");
 
 
-
-
-
-
-
-
-
-
-
-
-
 });
 
 var elements;
