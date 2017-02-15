@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Ex Json </title>
+	<meta charset="utf-8" />
+
+	<script>
+
+	   function car() {
+		   var req = new XMLHttpRequest(); 
+			  req.onreadystatechange = function () {
+				 if (req.readyState == 4 && req.status == 200) {
+				   document.getElementById("demo").innerHTML = this.responseText;
+						
+				}
+			 };
+			req.open("GET", "words.txt",true)
+			req.send();
+			}                   
+		car();
+	</script>
+
+</head>
+<body>
+	<p id="demo"></p>
+</body>
+</html>

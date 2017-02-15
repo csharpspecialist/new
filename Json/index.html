@@ -1,37 +1,37 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>   Json Example  </title>
+	<title>   Json Example  </title>
 	<meta charset="utf-8" />
 </head>
 <body>
-    <p> Here we are with JSON homework one</p>
+	<p> Here we are with JSON homework one</p>
 
-    <p id="example"></p>
+	<p id="example"></p>
 
-    <p id="words"></p>
-
-
-    <script>
-
-    var exObj1 =
-    { name:"Big Dog", address: 3005, ph:"555-6000", soc:684400 };
-
-    document.getElementById("example").innerHTML = exObj1.address;
-
-    </script>
+	<p id="words"></p>
 
 
-    <script>
+	<script>
 
-    var Obj1 =
-    {
-        year: 2012, make: "Chevy", ph:[ "555-6000", "288-2900"], soc: 684400
-    };
+	var exObj1 =
+	{ name:"Big Dog", address: 3005, ph:"555-6000", soc:684400 };
 
-    document.getElementById("words").innerHTML = Obj1.ph[1];
+	document.getElementById("example").innerHTML = exObj1.address;
 
-    </script>
+	</script>
+
+
+	<script>
+
+	var Obj1 =
+	{
+		year: 2012, make: "Chevy", ph:[ "555-6000", "288-2900"], soc: 684400
+	};
+
+	document.getElementById("words").innerHTML = Obj1.ph[1];
+
+	</script>
 
 </body>
 </html>

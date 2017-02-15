@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Workin' me to death AGAIN!!!!  </title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<style media="screen">
+	</style>
+
+	<script type="text/javascript">
+
+function takingOut() {
+	var x = document.getElementById("Dlist1");
+	x.remove(2);
+}
+	</script>
+
+	<script language="javascript">
+function example_animate(px) {
+	$('#example').animate({
+		'marginLeft' : px
+	});
+
+}
+	</script>
+
+</head>
+<body>
+
+	<button onclick="takingOut()">Remove option 2</button>
+
+	<select name="Dlist1" id="Dlist1">
+		<option value="A">  WHITE  </option>
+		<option value="B">  PURPLE  </option>
+		<option value="C">  BLUE  </option>
+		<option value="D"> RED  </option>
+		<option value="E"> GREEN  </option>
+	</select>
+
+	<p>
+		<input type="button" value="Move Left" onclick="example_animate('-=50px')" />
+		<input type="button" value="Move Right" onclick="example_animate('+=50px')" />
+		<div id="example" style="border: 1px solid black; margin: 10px 0px; padding: 10px;
+ background-color: rgb(238, 238, 238); width: 200px; text-align: center;">This is going to move</div>
+
+	</p>
+
+</body>
+</html>

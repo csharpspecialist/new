@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>   Date & Time Page</title>
+	<meta charset="utf-8" />
+    <script>
+
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", ];
+        document.write("Today is " + daylist);
+
+        var hour = today.getHours();
+        var mins = today.getminutes();
+        var secs = today.getSeconds();
+        var check = (hour > 12) ? "AM" : "PM";
+
+        if (hour === 0 && check === 'PM') {
+            if (mins === 0 && second === 0) {
+                hour == 12;
+                check == 'Noon';
+
+            }
+            else {
+                hour = 12;
+                check = 'PM';
+            }
+        }
+        if (hour ===0 && check === ' AM '){
+            if (mins === 0 && secs === 0) {
+                hour = 12;
+                check = ' Midnight ';
+            }
+            else
+            {
+                hour = 12;
+                check = ' AM ';
+            }
+        }
+        document.write("Current Time :" + hour + check + "  : " + minute + "  : " + secs);
+       
+    </script>
+    
+
+
+</head>
+<body>
+
+
+
+
+
+</body>
+</html>

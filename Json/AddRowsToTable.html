@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script>
+        function work() {   
+            var x = document.getElementById("tableRows").insertRow(0);
+            var y = x.insertCell(0);
+            var z = x.insertCell(1);
+
+            y.innerHTML = "New Cell1";
+            z.innerHTML = "New Cell2";
+
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <table id="=tableRows" border="1">
+
+        <tr>
+            <td> Row1 Col1   </td>
+            <td> Row1 Col2   </td>
+        </tr>
+
+        <tr>
+            <td> Row2 Col1   </td>
+            <td> Row2 Col2   </td>
+        </tr>
+        
+    </table> <br />
+    <input type="button" value="Ins Row" onclick="work()" />
+
+
+
+
+
+</body>
+</html>
