@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title JPage 2></title>
+	<meta charset="utf-8" />
+
+	<script>
+
+		var length0;
+		var length2;
+		var base2 = .5;
+		var answer;
+
+		function area() {
+			answer = (length0 / base2)
+			// document.getElementById("total").innerHTML = answer;
+
+		
+
+			// length0 = document.getElementById("le0").value;
+			//document.getElementById("baseOf1").innerHTML =length0;
+
+
+			length0 = document.getElementById("le0").value;
+			document.getElementById("lengthT").innerHTML = length0;
+
+			base2 = document.getElementById("baseline").value;
+			document.getElementById("baseOf1").innerHTML = base2;
+
+			document.getElementById("realAns").innerHTML = answer;
+
+
+		}
+
+		function changeThis() {
+			var formInput = document.getElementById('theInput').value;
+			document.getElementById('newText').innerHTML = formInput;
+		}
+
+
+
+
+	</script>
+
+</head>
+<body>
+
+	<p>
+		<label> Enter the lenth of the first side of the triangle</label>
+		<input type="text" id="le0" />
+	</p>
+	<p>
+		<label>
+			Enter the lenth of the 2nd side of the triangle
+		</label>
+		<input type="text" id="le2" />
+	</p>
+
+	<p>
+		<label> Enter the lenth of the base </label>
+		<input type="text" id="baseline" />
+	</p>
+
+	<p id="lengthT"> </p>
+
+	<p id="baseOf1"> </p>
+
+	<p id="realAns"> </p>
+
+	<button id="TButton" onclick="area()"> Find your area!!!</button>
+
+
+</body>
+</html>
