@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> More Json</title>
+	<meta charset="utf-8" />
+
+    <script>
+
+
+        var gord;
+        var go;
+
+        function whip() {
+
+            gord = { user: "words", voyager: "Klingon", captain: "Janeway", firstMate: "Spock", Engineer: "Sulu", doctor: "Bones", };
+            go = gord;
+            document.getElementById("smalls").innerHTML = "The real Captiain is " + go.captain + " & The real doctor is " + go.doctor;
+        };
+      
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+    <button id="mush" onclick="whip()">Star Trek Button</button>
+    <p id="smalls"></p>
+
+</body>
+</html>
