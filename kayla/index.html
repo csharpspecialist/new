@@ -1,0 +1,165 @@
+
+
+<!doctype html>
+<html>
+
+<head>
+
+
+	<link rel="shortcut icon" href="Photos/chimmi.jpg"/>
+
+	   <script src="js/bootstrap.min.js"></script>
+<script>
+
+function valid()
+{
+
+if (document.status.sendButton)
+alert("Thanks for Submitting Alexi's Report for today");
+else
+alert("Try again");
+
+}
+
+</script>
+
+
+<title> Ms Kayla's Page </title>
+	
+<noscript> In order to view this page you need Javscript enabled!!	</noscript>
+
+
+</head>
+
+
+<style>
+
+body {font-size: medium;
+	font-family: Serif;
+	background-color: #FC9898;
+	color: white;}
+
+
+p {
+     color: darkblue;
+    margin-left: 2px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#sButton {
+
+	font-weight: bold;
+	font-size: 20px;
+	width: 30em; 
+	height: 2em;
+}
+
+
+</style>
+
+<body>
+
+<p id="demo"> Today's Date</p>
+
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+<form name="status" action="mailto:netspec1@hotmail.com" method="post" enctype="text/plain">  
+
+<p > <span style="padding-left:45px"> Name of Teacher: <input type="text" name="myTextInput">   </p> 
+
+
+
+
+	
+	<p> <span style="padding-left:25px">  Was he happy today: 	 
+	<input type="radio" name="happy" value="YES">Yes
+	<input type="radio" name="happy" value="NO">No 
+	<input type="radio" name="happy" value="SORT">Sort of
+	<input type="radio" name="happy" value="VERY">Very
+	<input type="radio" name="happy" value="MISC">Mischievious
+	<input type="radio" name="happy" value="BAD">Bad 
+	</p> 
+	
+	
+	<p> <span style="padding-left:25px">  Was he awake today: 	 
+	<input type="radio" name="Business" value="YES">Yes
+	<input type="radio" name="Business" value="NO">No
+	<input type="radio" name="Business" value="Sort">Sort of
+	<input type="radio" name="Business" value="Most">Most of the day
+    <input type="radio" name="Business" value="Part">Part of the day
+	</p> 
+	
+	<p> <span style="padding-left:25px"> <label> Number of teachers in class today:   <input type="checkbox" /> 1
+	 <input type="checkbox" />2  <input type="checkbox" /> 3  
+	 </label>  </p>  	
+	
+	
+		 
+		<p> <span style="padding-left:25px"> <label> What did he have for a snack:   <input type="checkbox" /> Fruit
+	 <input type="checkbox" /> Crackers <input type="checkbox" /> Gummy Bears  <input type="checkbox" /> Chips
+     <input type="checkbox" /> Skittles 	 
+	 </label>  </p>  
+	
+	
+		<p> <span style="padding-left:25px"> <label> What did he have for lunch:   <input type="checkbox" /> Baked Beans
+	 <input type="checkbox" /> Apples  <input type="checkbox" /> Banana  <input type="checkbox" /> Meatballs 
+	 <input type="checkbox" /> Spaghetti <input type="checkbox" /> Bread <input type="checkbox" /> Hotdog
+	 </label>  </p>  
+	
+	
+		<p> <span style="padding-left:25px">  Did he eat all/most of his lunch?: 	 
+	<input type="radio" name="Lunch" value="YES">Yes
+	<input type="radio" name="Lunch" value="NO">No </p> 
+	
+	
+	<p> <span style="padding-left:25px"> <label> What do you need more of:   <input type="checkbox" /> Pants 
+		 <input type="checkbox" /> Jacket  <input type="checkbox" /> Socks  <input type="checkbox" /> Shirts 
+		 </label>  </p>  
+		 
+		 
+		 
+	<p> <span style="padding-left:25px"> <label> How was potty training today?:   <input type="checkbox" /> Great 
+		 <input type="checkbox" /> Good  <input type="checkbox" /> OK  <input type="checkbox" /> Bad 
+		 <input type="checkbox" /> Not Happening!! 
+		 </label>  </p>  	 
+	
+		<p>  Anything else you would like to add/comment:
+	 <span style="padding-left:25px">
+	<textarea rows="2" cols="50" name="AddInfo">
+</textarea>    </p>    
+
+<div id="placeOrder" style="padding-left:25px"> 
+ 
+  <!--   <button type="submit"  id = "sButton" name="sendButton" onClick="valid()" width="30em" height="30em"> 
+ Pressing this Button sends this info to Alexi's parents!! </button>      -->
+ 
+ 
+ <form action="mailto:netspec1@hotmail.com" method="post" enctype="text/plain" >
+FirstName:<input type="text" name="FirstName">
+Email:<input type="text" name="Email">
+<input type="submit" name="submit" value="Submit">
+</form>
+ 
+ 
+</div>
+
+
+
+
+ </form>	
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
