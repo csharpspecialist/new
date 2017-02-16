@@ -1,33 +1,69 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title> More Json</title>
+	<title> More Json</title>
 	<meta charset="utf-8" />
 
-    <script>
+	<script>
 
 
-        var gord;
-        var go;
+		var gord;
+		var go;
 
-        function whip() {
+		function whip() {
 
-            gord = { user: "words", voyager: "Klingon", captain: "Janeway", firstMate: "Spock", Engineer: "Sulu", doctor: "Bones", };
-            go = gord;
-            document.getElementById("smalls").innerHTML = "The real Captiain is " + go.captain + " & The real doctor is " + go.doctor;
-        };
-      
+			gord = { user: "words", voyager: "Klingon", captain: "Janeway", firstMate: "Spock", Engineer: "Sulu", doctor: "Bones", };
+			go = gord;
+			document.getElementById("smalls").innerHTML = "The real Captiain is " + go.captain + " & The real doctor is " + go.doctor;
+		}; 
 
-
-    </script>
-
-
+	</script>
 
 </head>
 <body>
 
-    <button id="mush" onclick="whip()">Star Trek Button</button>
-    <p id="smalls"></p>
+	<button id="mush" onclick="whip()">Star Trek Button </button>
+
+	<button id="crush" onclick="ave()"> Infiniti Button  </button>
+
+	<button id="loose" onclick="cool()"> Dodge Button </button>
+
+	<p id="smalls"></p>
+
+	<p id="rose"></p>
+
+	<p id="master"></p>
+
+	<script>
+
+	
+		var make;
+		var zorro;
+		var madman;
+
+		function ave() {
+
+		   
+			zorro = { Infiniti: "FX 35" , ford: "Ranger", Cheverolet: "Corvette", Nissan :"Altima" };
+
+			//make = zorro;
+			
+			document.getElementById("rose").innerHTML = zorro.Nissan;
+		};
+
+
+		function cool() {
+
+			madman = { dodge: ["Durango", "Avenger", "Dakota", "Dart"] };	
+			
+			document.getElementById("master").innerHTML = madman.dodge[1];
+		};
+
+	</script>
+
+
+
+
 
 </body>
 </html>
