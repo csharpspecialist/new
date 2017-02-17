@@ -17,24 +17,14 @@
 			var sleepIn = function (weekday, vacation) {
 
 			    if (vacation == 2 && weekday > 5)
-			        document.getElementById("volt").innerHTML = "Vacation Time!!!"
+			        document.getElementById("volt").innerHTML = "We Sleep In Today!!!"
 			    else if (vacation != 2 && weekday > 5 && weekday < 1)
 			        document.getElementById("volt").innerHTML = "It's a Weekend!!"
 			    else if (vacation != 2 && weekday > 0 == weekday < 6 )
 			        document.getElementById("volt").innerHTML = "It's a Workday!!"
 			    else
 			        document.getElementById("volt").innerHTML = "Who Knows!!!!"
-
-
-
-
-
-				//if (weekday == 5 )
-				//	document.write("its a weekend!!!");
-				//else if (vacation == 2)
-				//	document.write("Hooray");
-				//else
-				//	document.write("Who cares!!!")			
+	
 					
 			}
 			function day() {
@@ -82,13 +72,15 @@
 
 	<button onclick="sleepIn()"> Sleep!!  </button>
 
-	<button onclick="real()"> No Way!!  </button>
+	<!--<button onclick="real()"> No Way!!  </button>
 
 	<button onclick="dude()"> Dude Button!!  </button>
 
 	<button onclick="nice()"> Nice Button!!  </button>
 	<p>
 		<button onclick="day()"> Day Button!!  </button>
-	</p>
+	</p>   -->
+
+
 </body>
 </html>
