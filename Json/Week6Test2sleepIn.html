@@ -12,47 +12,64 @@
 		//var vacation = x.getDay();
 		//var dateT = x.getDay();
 
-
-		var vacation = 2;
-
-
-
-	   
-		function dude() {  
+		var vacation = 2;//means yes	   
 
 			var sleepIn = function (weekday, vacation) {
 
-				if (weekday > 5 || weekday < 1)
-					document.write("its a weekend!!!");
-				else if (vacation === 2)
-					document.write("Hooray");
+			    if (vacation == 2 && weekday > 5)
+			        document.getElementById("volt").innerHTML = "Vacation Time!!!"
+			    else if (vacation != 2 && weekday > 5 && weekday < 1)
+			        document.getElementById("volt").innerHTML = "It's a Weekend!!"
+			    else if (vacation != 2 && weekday > 0 == weekday < 6 )
+			        document.getElementById("volt").innerHTML = "It's a Workday!!"
+			    else
+			        document.getElementById("volt").innerHTML = "Who Knows!!!!"
+
+
+
+
+
+				//if (weekday == 5 )
+				//	document.write("its a weekend!!!");
+				//else if (vacation == 2)
+				//	document.write("Hooray");
+				//else
+				//	document.write("Who cares!!!")			
+					
+			}
+			function day() {
+			    if (vacation == 2 && weekday > 5 )
+					document.getElementById("volt").innerHTML = "No Way"
+			    else if (vacation != 2 && weekday > 5)
+					document.getElementById("volt").innerHTML = "I'LL Be Back"
 				else
-					document.write("Who cares!!!");
-				return true;
-                			
+					document.getElementById("volt").innerHTML = "NO Badges!!!!"
+
+			}
 
 
-		}
-
-		}
-
-		function real() {
-
-			if (weekday >= 5 || weekday < 1)
-				document.write("its a weekend!!!");			
-			else
-				document.write("Its stil during the week!!!");
-
-			
-	
-			
-		}
 
 
+
+		//function real() {
+
+		//	if (weekday >= 5 || weekday < 1)
+		//		document.write("its a weekend..No Work Until Monday!!!");			
+		//	else
+		//		document.write("Its stil a weekday!!!");		
+				
+		//}
+
+		//function nice() {
+		//	if (weekday > 5 || weekday < 1)
+		//	    document.write("its a weekend..No Work Until Monday!!!");
+		//	else if (vacation === 2)
+		//		document.write("Hooray");
+		//	else
+		//		document.write("Who cares!!!");
+		//};         
 		   
 	</script>
-
-
 
 </head>
 <body>
@@ -61,10 +78,17 @@
 
 	<p id="chewy"> Answers are Here!!!! </p>
 
-	<button onclick="sleepIn()"> Press ME!!  </button>
+	<p id="volt"> Volt Here!!!! </p>
+
+	<button onclick="sleepIn()"> Sleep!!  </button>
 
 	<button onclick="real()"> No Way!!  </button>
 
 	<button onclick="dude()"> Dude Button!!  </button>
+
+	<button onclick="nice()"> Nice Button!!  </button>
+	<p>
+		<button onclick="day()"> Day Button!!  </button>
+	</p>
 </body>
 </html>
