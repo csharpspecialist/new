@@ -1,74 +1,89 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title JPage 2></title>
-	<meta charset="utf-8" />
+    <meta charset=utf-8 />
+    <title> Triangle Work </title>
 
-	<script>
+    <style media="screen">
+        button {
+            width: 130px;
+            height: 50px;
+            color: #ff0000;
+            background-color: lightblue;
+            font-size: 19px;
+        }
 
-		var length0;
-		var length2;
-		var base2 = .5;
-		var answer;
+        label {
+            font-size: 28px;
+        }
 
-		function area() {
-			answer = (length0 / base2)
-			// document.getElementById("total").innerHTML = answer;
+        #display1, #display2, #display3, #clown {
+            font-size: 25px;
+        }
 
-		
-
-			// length0 = document.getElementById("le0").value;
-			//document.getElementById("baseOf1").innerHTML =length0;
-
-
-			length0 = document.getElementById("le0").value;
-			document.getElementById("lengthT").innerHTML = length0;
-
-			base2 = document.getElementById("baseline").value;
-			document.getElementById("baseOf1").innerHTML = base2;
-
-			document.getElementById("realAns").innerHTML = answer;
+        #val1, #val2, #val3, #clown {
+            font-size: 22px;
+        }
+    </style>
 
 
-		}
-
-		function changeThis() {
-			var formInput = document.getElementById('theInput').value;
-			document.getElementById('newText').innerHTML = formInput;
-		}
+    <script type="text/javascript">
 
 
 
+function real() {
 
-	</script>
+var side1;
+var side2;
+var base;
+
+side1 = document.getElementById("val1").value;
+document.getElementById("display1").innerHTML= side1;
+
+side2 = document.getElementById("val2").value;
+document.getElementById("display2").innerHTML= side2;
+
+base = document.getElementById("val3").value;
+document.getElementById("display3").innerHTML= base;
+
+
+var perimeter = (side1 + side2 + base)/2;
+var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-base)));
+
+document.getElementById("clown").innerHTML= area;
+ };
+
+    </script>
 
 </head>
 <body>
 
-	<p>
-		<label> Enter the lenth of the first side of the triangle</label>
-		<input type="text" id="le0" />
-	</p>
-	<p>
-		<label>
-			Enter the lenth of the 2nd side of the triangle
-		</label>
-		<input type="text" id="le2" />
-	</p>
+    <p>
+        <label> Enter The length of the first side  </label>
+        <input type="text" id="val1" value="">
+    </p>
 
-	<p>
-		<label> Enter the lenth of the base </label>
-		<input type="text" id="baseline" />
-	</p>
+    <p>
+        <label> Enter The length of the 2nd side  </label>
+        <input type="text" id="val2" value="">
+    </p>
 
-	<p id="lengthT"> </p>
+    <p>
+        <label> Enter The length of the base  </label>
+        <input type="text" id="val3" value="">
+    </p>
 
-	<p id="baseOf1"> </p>
+    <button type="button" name="button" onclick="real()" width="20px" height="30px"> Calculation Button </button>
 
-	<p id="realAns"> </p>
+    <p id="display1"></p>
 
-	<button id="TButton" onclick="area()"> Find your area!!!</button>
+    <p id="display2"></p>
 
+    <p id="display3"></p>
+
+    <p id="clown"></p>
+
+    
 
 </body>
 </html>
