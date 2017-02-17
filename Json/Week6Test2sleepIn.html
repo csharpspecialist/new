@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> U R Out to get us!!!!  </title>
+	<meta charset="utf-8" />
+
+
+	<script>
+
+		var x = new Date();	   
+		var weekday = x.getDay();
+		//var vacation = x.getDay();
+		//var dateT = x.getDay();
+
+
+		var vacation = 2;
+
+
+
+	   
+		function dude() {  
+
+			var sleepIn = function (weekday, vacation) {
+
+				if (weekday > 5 || weekday < 1)
+					document.write("its a weekend!!!");
+				else if (vacation === 2)
+					document.write("Hooray");
+				else
+					document.write("Who cares!!!");
+				return true;
+                			
+
+
+		}
+
+		}
+
+		function real() {
+
+			if (weekday >= 5 || weekday < 1)
+				document.write("its a weekend!!!");			
+			else
+				document.write("Its stil during the week!!!");
+
+			
+	
+			
+		}
+
+
+		   
+	</script>
+
+
+
+</head>
+<body>
+
+	<p id="answer"> Answer is Here!!!! </p>
+
+	<p id="chewy"> Answers are Here!!!! </p>
+
+	<button onclick="sleepIn()"> Press ME!!  </button>
+
+	<button onclick="real()"> No Way!!  </button>
+
+	<button onclick="dude()"> Dude Button!!  </button>
+</body>
+</html>
