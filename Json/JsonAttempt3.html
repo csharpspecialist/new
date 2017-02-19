@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Attempting 3 Json</title>
+	<meta charset="utf-8" />
+
+
+	<script>
+
+		var x;
+
+		var z;
+
+		function closer() {
+
+			x = { nissan: "Altima", ford: "Ranger", dodge: 200, toyota: "Tacoma" };
+			document.getElementById("show").innerHTML = x.dodge;
+
+		}
+
+		function nasty() {
+
+			z = { infiniti:["G 37 ", "Q50", "FX 35"] };
+			document.getElementById("crafty").innerHTML = z.infiniti[1];
+
+		}
+
+	</script>
+
+
+</head>
+<body>
+
+    <h2> Writing JSon by hand...and from memory!!!  </h2>
+
+	<p id="show"></p>
+	<p id="crafty"></p>
+
+	<button id="dummy" onclick="closer(); nasty()"> Activate Closer and Nasty   </button>
+
+</body>
+</html>

@@ -1,58 +1,58 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title> Update Table Cell   </title>
+	<title> Update Table Cell   </title>
 	<meta charset="utf-8" />
 
-    <style>
-        body{
-            margin:30px;
-        }
+	<style>
+		body{
+			margin:30px;
+		}
 
-    </style>
+	</style>
 
-    <script>
+	<script>
 
-        function UTC() {
-            var rn;
-            var cn;
-            var content;
+		function UTC() {
+			var rn;
+			var cn;
+			var content;
 
-            rn = window.prompt("Input the row # (0,1,2)");
-            cn = window.prompt("Input the Column # (0,1)", "0");
-            content = window.prompt("Input the row # (0,1,2)");
-            var x = document.getElementById("updater").rows[parseInt(rn, 10)].cells;
-            x.parseInt(cn, 10).innerHTML = content;
-            
-        }        
+			rn = window.prompt("Input the row # (0,1,2)");
+			cn = window.prompt("Input the Column # (0,1)", "0");
+			content = window.prompt("Input the row # (0,1,2)");
+			var x = document.getElementById("updater").rows[parseInt(rn, 10)].cells;
+			x.parseInt(cn, 10).innerHTML = content;
+			
+		}        
 
-        UTC();
-    </script>
-    
+		UTC();
+	</script>
+	
 
 </head>
 <body>
 
-    <table id="updater" border="1">
+	<table id="updater" border="1">
 
-        <tr>
-            <td> Row1 Col1   </td>
-            <td> Row1 Col2   </td>
-        </tr>
+		<tr>
+			<td> Row1 Col1   </td>
+			<td> Row1 Col2   </td>
+		</tr>
 
-        <tr>
-            <td> Row2 Col1   </td>
-            <td> Row2 Col2   </td>
-        </tr>
+		<tr>
+			<td> Row2 Col1   </td>
+			<td> Row2 Col2   </td>
+		</tr>
 
-        <tr>
-            <td> Row3 Col1   </td>
-            <td> Row3 Col2   </td>
-        </tr>
+		<tr>
+			<td> Row3 Col1   </td>
+			<td> Row3 Col2   </td>
+		</tr>
 
-    </table>
+	</table>
 
-    <button id="happy" onclick="updater()"> Don't Do IT!!!</button>
+	<button id="happy" onclick="updater()"> Don't Do IT!!!</button>
 
 
 
