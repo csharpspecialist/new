@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Tests are for Sissies!!!!  </title>
+	<meta charset="utf-8" />
+
+	<script>
+
+		function fillInTheCode() {
+			var x = new XMLHttpRequest();
+			x.onreadystatechange = function () {  
+			if (x.readyState == 4 && x.status == 200); {
+			    document.getElementById("demo").innerHTML = x.responseText;
+			}
+			   
+			};
+			x.open("GET", "words.txt", true);
+			x.send();
+
+		}
+	</script>
+
+
+
+</head>
+<body>
+
+	<p id="demo"> </p>
+
+	<button onclick="fillInTheCode()"> Workin' Over HERE!!!</button>
+
+</body>
+</html>
