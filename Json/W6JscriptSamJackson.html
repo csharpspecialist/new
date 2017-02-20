@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Sam Jackson!!!</title>
+	<meta charset="utf-8" />
+
+	<script>
+
+		var clean;
+		var blade;
+		var slo;
+		var text = "";
+
+		clean = { name:[ "Sam" ]};
+		blade = { Class: ["C#", "smalls", "nice", "puppies"] };
+		slo = {  courseno: [1501] };
+
+		function show() {
+			console.log(clean.name);
+			console.log(blade.Class);
+			console.log(slo.courseno);
+			document.getElementById("play").innerHTML = clean.name[0];
+
+		}	
+		
+		function del() {
+			//delete blade[1];
+			//fruits.splice(0, 1);
+
+		     var dude = ["weak", "cold" , "snow"];
+			for (i = 0; i < dude.length; i++) {
+				text += dude[i];
+			}
+			document.getElementById("walk").innerHTML = text;			
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<p id="play"></p>
+
+	<p id="walk"></p>
+
+
+	<button id="pearl" onclick="show()"> Show Button</button>
+
+	<button onclick="del()"> Delete Button </button>
+</body>
+</html>
