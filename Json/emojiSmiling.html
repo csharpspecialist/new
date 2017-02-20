@@ -4,26 +4,57 @@
 <head>
 	<meta charset="utf-8">
 	<title> javascript If Else </title>
+
+	<style>
+		#big , #show{
+			font-size: 30px;
+		}
+
+		.blue {
+			font-size: 30px;
+			color: blue;
+		}
+
+		.green {
+			font-size: 30px;
+			color: green;
+		}
+	</style>
+
+
 	<script type="text/javascript">
 
 		var e1Smile;
 
 		var e2Smile;
 
-	var emojiTrouble = function (e1Smile, e2Smile){
+		var eS1;
 
-	    e1Smile = document.getElementById("tBox1").value;
+		var eS2;
+	
+		
+		function emojiTrouble (eS1, eS2){
+							
+			e1Smile = document.getElementById("tBox1").value;
 
-	    e2Smile = document.getElementById("tBox2").value;
+			eS1 = e1Smile.toUpperCase();
 
-	if (e1Smile == "Yes" && e2Smile == "")
+			e2Smile = document.getElementById("tBox2").value;
+
+			eS2 = e2Smile.toUpperCase();
+
+	if (eS1 == "YES" && eS2 == "YES")
 	{
-	  document.write("Whatever")
+		document.getElementById("show").innerHTML = "We Are In trouble";
 	}
-	else if (x == "Yes" && y == "Yes")
+	else if (eS1 == "YES" && eS2 == "NO" || eS1 == "NO" && eS2 == "YES")
 	{
-		document.write("U R a nut")
+		document.getElementById("show").innerHTML = "We Are A OK Today!!!";
 	}
+	else if (eS1 == "NO" && eS2 == "NO") {
+		document.getElementById("show").innerHTML = "We Are In trouble";
+	}
+
 else
 {
   document.write("No Way");
@@ -35,11 +66,16 @@ else
 	</script>
 </head>
 <body>
-	<p>
-		Do you like football or Basketball??
+	<p id="big">
+		Are we in trouble???
 	</p>
-	<input type="text" id="tBox1" value="hello">
-	<button name="" onclick="work()">   Answer Button   </button>
 
+	<p class="blue"> Emoji 1...am I smiling?? <input type="text" id="tBox1" value="">    </p>
+
+	<p class="green"> Emoji 2...am I smiling?? <input type="text" id="tBox2" value="">    </p>
+
+	<button id="big" onclick="emojiTrouble()">   Answer Button   </button>
+
+	<p id="show">
 </body>
 </html>
