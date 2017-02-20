@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        R Buttons & Check boxes     </title>
+    <meta charset="utf-8" />
+
+
+    <script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+
+function radioChoice(happy) {
+    var x = document.getElementById("myRadio").value = happy;
+    document.getElementById("demo").innerHTML = x;
+}
+
+
+function answer(fine) {
+    document.getElementById("tBox1").value = fine;
+}
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <p>Select your favorite browser:</p>
+    <!--<form action="/action_page.php">-->
+        <input type="radio" name="browser" onclick="myFunction(this.value)" value="Internet Explorer">Internet Explorer<br>
+        <input type="radio" name="browser" onclick="myFunction(this.value)" value="Firefox">Firefox<br>
+        <input type="radio" name="browser" onclick="myFunction(this.value)" value="Opera">Opera<br>
+        <input type="radio" name="browser" onclick="myFunction(this.value)" value="Google Chrome">Google Chrome<br>
+        <input type="radio" name="browser" onclick="myFunction(this.value)" value="Safari">Safari<br><br>
+
+        Your favorite browser is: <input type="text" id="result">
+        <input type="button" value="Submit form">
+    <!--</form>-->
+
+    <!--<input type="radio" name="colors" value="blue" id="myRadio">Blue color
+    <input type="radio" name="colors" value="red" id="myRadio">Red color-->
+    
+
+    <p>
+        <span style="padding-left:25px">
+            Was he happy today:
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="NO">No
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="YES">Yes
+          
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="SORT">Sort of
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="VERY">Very
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="MISC">Mischievous
+            <input type="radio" name="happy" id="myRadio" onclick="radioChoice(this.value)" value="BAD">Bad
+            </span>
+    </p> 
+
+    <p>Click the "Try it" button to display the value of the value attribute of the radio button.</p>
+
+    <button onclick="radioChoice()">  Radio Choice  </button>
+
+
+    <p>How was he today??:</p>
+    <!--<form action="/action_page.php">-->
+    <input type="radio" name="fine" onclick="answer(this.value)" value="Happy">  Happy  <br>
+    <input type="radio" name="fine" onclick="answer(this.value)" value="Tired"> Tired <br>
+    <input type="radio" name="fine" onclick="answer(this.value)" value="Misch">   Mischievous  <br>
+    <input type="radio" name="fine" onclick="answer(this.value)" value="Sortof">  Sort Of  <br>
+    <input type="radio" name="fine" onclick="answer(this.value)" value="Bad">  Bad <br><br>
+
+    Your favorite browser is: <input type="text" id="tBox1">
+    <input type="button" value="Submit form">
+
+
+    <p id="demo"></p>
+
+    <script>
+
+    </script>
+
+
+
+</body>
+</html>
