@@ -4,32 +4,66 @@
 	<title></title>
 	<meta charset="utf-8" />
 
-	<script>
 
-		var x = 100;
-		var y = 200;
+	<style>
+		.big , .input {
+			font-size: 30px;
+		}
 
-		function check() {
-
-			if (guess => 90 && guess => 110)
-			    document.getElementById("answer").innerHTML = "Close Enough to 100!!";
-			else if (guess => 190 && guess => 210)
-			    document.getElementById("answer").innerHTML = "Close Enough to 200!!";
-
-
+		#size, #answer, #input {
+			font-size: 25px;
 		}
 
 
-	</script>
+		.blue {
+			font-size: 30px;
+			color: blue;
+		}
 
+		.green {
+			font-size: 30px;
+			color: green;
+		}
+	</style>
+
+	<script>
+
+		var guess;
+
+		function check() {
+
+			guess = document.getElementById("input").value;
+
+		if (guess == 100)
+			document.getElementById("answer").innerHTML = "Your guess of 100 is correct!!";
+			else if (guess > 90 && guess < 110)
+				document.getElementById("answer").innerHTML = "Close Enough to 100!!";
+			   
+			else if (guess == 200)
+				document.getElementById("answer").innerHTML = "Your guess of 200 is correct!!";
+			else if (guess > 190 && guess < 210 )
+			   
+				document.getElementById("answer").innerHTML = "Close Enough to 200!!";
+			else
+			{
+				document.getElementById("answer").innerHTML = "U r not even close!!!";
+			}
+
+		}
+
+	</script>
 
 
 </head>
 <body>
 
-	<p id="answer"></p>
+	<input type="text" id="input" />
 
-	<button onclick="check()"> Guess </button>
+	<p id="answer">
+		<label id="size"> Choose a # between 1 and 250 above </label>
+	</p>
+	<br />
+	<button class="big" onclick="check()"> Guess Button </button>
 
 
 
