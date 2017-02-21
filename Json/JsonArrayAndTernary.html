@@ -24,18 +24,26 @@
 			document.getElementById("crafty").innerHTML = z.infiniti[1];
 
 		}
+		var del = 2;
+		var result;
 
+		function toyz() {	
+
+		var result = (del < 3) ? "Groovy" : "Sucks";
+
+		document.getElementById("spoiled").innerHTML = result;
+		}
 	</script>
 
 </head>
 <body>
 
 	<h2> Writing JSon by hand...and from memory!!!  </h2>
-
+	<p id="spoiled"></p>
 	<p id="show"></p>
 	<p id="crafty"></p>
 
-	<button id="dummy" onclick="closer(); nasty()"> Activate Closer and Nasty   </button>
+	<button id="dummy" onclick="closer(); nasty(), toyz()"> Activate Closer and Nasty   </button>
 
 </body>
 </html>
