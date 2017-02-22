@@ -36,7 +36,7 @@ namespace MathService1
             return num1 / num2;
 
         }
-        
+
         public Int32 Sin(Int32 num1, Int32 num2)
         {
 

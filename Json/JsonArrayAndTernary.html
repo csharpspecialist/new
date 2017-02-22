@@ -29,10 +29,18 @@
 		var result;
 
 		function toyz() {	
-		    var smooth = document.getElementById("tboxInput").value;
+			var smooth = document.getElementById("tboxInput").value;
 		result = (smooth < 3) ? "Groovy" : "Sucks";
 
 		document.getElementById("spoiled").innerHTML = result;
+		}
+
+		function bluto() { 
+		var dude = { sandwich: "BLT", burger: "Big Mac", shoes: "Wing Tips" };
+
+		document.getElementById("ram").innerHTML = dude.sandwich;
+
+
 		}
 	</script>
 
@@ -43,10 +51,13 @@
 	<p id="spoiled"></p>
 	<p id="show"></p>
 	<p id="crafty"></p>
+	<p id="ram"></p>
 	<input type="text" id="tboxInput" />
 
 	<button id="dummy" onclick="closer(); nasty()"> Activate Closer and Nasty   </button>
 	<button id="crest" onclick="toyz()"> Activate Toyz Function   </button>
+
+	<button id="normal" onclick="bluto()"> Bluto Button </button>
 
 </body>
 </html>
