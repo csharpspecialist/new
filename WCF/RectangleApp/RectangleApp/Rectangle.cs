@@ -27,10 +27,10 @@ namespace RectangleApp
 
         public void Display()
         {
-            Console.WriteLine("Length : {0}", length);
-            Console.WriteLine("Width : {0}", width);
-            Console.WriteLine("Area : {0}", GetArea());
-            Console.ReadKey();
+            WriteLine("Length : {0}", length);
+            WriteLine("Width : {0}", width);
+            WriteLine("Area : {0}", GetArea());
+            ReadKey();
 
         }
             //Console.WriteLine("what's the best kind of sandwich");
@@ -52,7 +52,7 @@ namespace RectangleApp
                 //show.GetArea();
                 show.AcceptDetails();
                 show.Display();
-                Console.ReadKey();
+                ReadKey();
 
 
                 Console.WriteLine("what's the best kind of sandwich");
