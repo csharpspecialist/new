@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title> Nested Loop Pattern   </title>
+	<title> Nested Loop Pattern   </title>
 	<meta charset="utf-8" />
 
 
@@ -9,20 +9,38 @@
 
 </head>
 <body>
-    <p id="forLoop"></p>
+	<p id="forLoop"></p>
 
-    <script>
+	<script>
 
-        for ( i = 1; i <= 10; i++) {
-            for ( j = 1; j <= i; j++) {
-                var nestedLoop = document.getElementById("forLoop");
-                nestedLoop.innerHTML = nestedLoop.innerHTML + "*";
-            }
-            nestedLoop.innerHTML = nestedLoop.innerHTML + "<br />";
-        }
+		for ( i = 1; i <= 10; i++) {
+			for ( j = 1; j <= i; j++) {
+				var nestedLoop = document.getElementById("forLoop");
+				nestedLoop.innerHTML = nestedLoop.innerHTML + "*";
+			}
+			nestedLoop.innerHTML = nestedLoop.innerHTML + "<br />";
+		}
 
-    </script>
 
+		function dealer() {
+
+		
+		var burgers = ["Whopper","Big Mac","Whaler","Triple"];
+
+		for (var i = 0; burgers < length; i++) {
+
+		}
+		document.getElementById("killa").innerHTML = burgers[i];
+		}
+
+		
+
+	</script>
+
+
+	<p id="killa"> </p>
+
+	<button id="solid" onclick="dealer"> Dealer Button</button>
 
 </body>
 </html>
