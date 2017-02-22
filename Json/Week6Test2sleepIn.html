@@ -13,33 +13,32 @@
 		//var vacation = x.getDay();
 		//var dateT = x.getDay();
 
+
 		var vacation = 2;//means yes	   
 
 			var sleepIn = function (weekday, vacation) {
 
-			    if (vacation == 2 && weekday > 5)
-			        document.getElementById("volt").innerHTML = "We Sleep In Today!!!"
-			    else if (vacation != 2 && weekday > 5 && weekday < 1)
-			        document.getElementById("volt").innerHTML = "It's a Weekend!!"
-			    else if (vacation != 2 && weekday > 0 == weekday < 6 )
-			        document.getElementById("volt").innerHTML = "It's a Workday!!"
-			    else
-			        document.getElementById("volt").innerHTML = "Who Knows!!!!"
+				if (vacation == 2 && weekday > 5)
+					document.getElementById("volt").innerHTML = "We Sleep In Today!!!"
+				else if (vacation != 2 && weekday > 5 && weekday < 1)
+					document.getElementById("volt").innerHTML = "It's a Weekend!!"
+				else if (vacation != 2 && weekday > 0 == weekday < 6 )
+					document.getElementById("volt").innerHTML = "It's a Workday!!"
+				else
+					document.getElementById("volt").innerHTML = "Who Knows!!!!"
 	
 					
 			}
 			function day() {
-			    if (vacation == 2 && weekday > 5 )
+				if (vacation == 2 && weekday > 5 )
 					document.getElementById("volt").innerHTML = "No Way"
-			    else if (vacation != 2 && weekday > 5)
+				else if (vacation != 2 && weekday > 5)
 					document.getElementById("volt").innerHTML = "I'LL Be Back"
 				else
 					document.getElementById("volt").innerHTML = "NO Badges!!!!"
 
 			}
-
-
-
+        			
 
 
 		//function real() {
@@ -72,16 +71,7 @@
 	<p id="volt"> Volt Here!!!! </p>
 
 	<button onclick="sleepIn()"> Sleep!!  </button>
-
-	<!--<button onclick="real()"> No Way!!  </button>
-
-	<button onclick="dude()"> Dude Button!!  </button>
-
-	<button onclick="nice()"> Nice Button!!  </button>
-	<p>
-		<button onclick="day()"> Day Button!!  </button>
-	</p>   -->
-
+	
 
 </body>
 </html>
