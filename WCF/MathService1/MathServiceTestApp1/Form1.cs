@@ -47,8 +47,6 @@ namespace MathServiceTestApp1
                 txtResult.Text = msClient.Divide(msNum1, msNum2).ToString();
             }
             
-
-
         }
     }
 }
