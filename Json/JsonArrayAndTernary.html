@@ -24,12 +24,13 @@
 			document.getElementById("crafty").innerHTML = z.infiniti[1];
 
 		}
+		
 		var del = 2;
 		var result;
 
 		function toyz() {	
-
-		var result = (del < 3) ? "Groovy" : "Sucks";
+		    var smooth = document.getElementById("tboxInput").value;
+		result = (smooth < 3) ? "Groovy" : "Sucks";
 
 		document.getElementById("spoiled").innerHTML = result;
 		}
@@ -42,8 +43,10 @@
 	<p id="spoiled"></p>
 	<p id="show"></p>
 	<p id="crafty"></p>
+	<input type="text" id="tboxInput" />
 
-	<button id="dummy" onclick="closer(); nasty(), toyz()"> Activate Closer and Nasty   </button>
+	<button id="dummy" onclick="closer(); nasty()"> Activate Closer and Nasty   </button>
+	<button id="crest" onclick="toyz()"> Activate Toyz Function   </button>
 
 </body>
 </html>
