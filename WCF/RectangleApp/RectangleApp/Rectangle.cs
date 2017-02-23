@@ -11,12 +11,11 @@ namespace RectangleApp
         double length;
         double width;
 
-        public void AcceptDetails()
+        public void InsertValues()
         {
             length = 4.5;
             width = 3.5;
         }
-
 
         public double GetArea()
         {
@@ -35,25 +34,19 @@ namespace RectangleApp
         }
             //Console.WriteLine("what's the best kind of sandwich");
 
-            //string words = Console.ReadLine();
-
-        
-
-
+            //string words = Console.ReadLine();                  
+            
         class ExecuteRectangle
         {
             static void Main(string[] args)
 
             {
-
                 Rectangle show = new Rectangle();
-
                
                 //show.GetArea();
-                show.AcceptDetails();
+                show.InsertValues();
                 show.Display();
                 ReadKey();
-
 
                 Console.WriteLine("what's the best kind of sandwich");
 
