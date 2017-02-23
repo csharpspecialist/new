@@ -16,6 +16,7 @@ namespace DebugExercises1
 
             p.Caller();
 
+
         }
         public void Caller()
         {
@@ -26,7 +27,7 @@ namespace DebugExercises1
 
         }
 
-        public static void One1()
+        public void One1()
         {
             WriteLine("Mary had a little lamb");
             WriteLine("Its fleece was white as snow");
@@ -40,7 +41,7 @@ namespace DebugExercises1
 
         //Filename DebugOne2.cs
         // This program outputs a large C#
-        public static void One2()
+        public void One2()
         {
             WriteLine("CCCCC   #  #");
             WriteLine("C     ########");
