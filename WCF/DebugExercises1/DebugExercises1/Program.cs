@@ -10,12 +10,12 @@ namespace DebugExercises1
     class Program
     {
         static void Main(string[] args)
-                      
+
         {
             Program p = new Program();
 
-            p.Caller();        
-                     
+            p.Caller();
+
         }
         public void Caller()
         {
@@ -42,11 +42,11 @@ namespace DebugExercises1
         // This program outputs a large C#
         public static void One2()
         {
-              WriteLine("CCCCC   #  #");
-              WriteLine("C     ########");
-              WriteLine("C       #  #");
-              WriteLine("C     ########");
-              WriteLine("CCCCC   #  #");
+            WriteLine("CCCCC   #  #");
+            WriteLine("C     ########");
+            WriteLine("C       #  #");
+            WriteLine("C     ########");
+            WriteLine("CCCCC   #  #");
 
 
             ReadKey();
@@ -57,7 +57,7 @@ namespace DebugExercises1
 
         public static void One3()
         {
-           
+
             WriteLine("Take Highway 51 north");
             WriteLine("Exit at County Road H");
             WriteLine("Go three blocks and make a right on School Street");
@@ -68,15 +68,15 @@ namespace DebugExercises1
             Console.WriteLine("This one is done Too!!!");
             ReadKey();
         }
-        
+
         public static void One4()
         {
             WriteLine("Spinach dip:");
             WriteLine();
             WriteLine("1 package frozen chopped spinach");
-            WriteLine("1 cup mayonaise");
+            WriteLine("1 cup mayonnaise");
             WriteLine("1 chopped onion");
-            WriteLine ("Onions Taste Like Dirt!!!! Cold Dirt At That!!!");
+            WriteLine("Onions Taste Like Dirt!!!! Cold Dirt At That!!!");
             WriteLine("Mix ingredients together.");
             WriteLine("Chill and serve with chips.");
 
@@ -88,7 +88,7 @@ namespace DebugExercises1
 
             ReadKey();
 
-            
+
             {
 
             }
@@ -98,9 +98,9 @@ namespace DebugExercises1
         public void Two1()
         {
             string name = "Whatever";
-            string  bossName = "Dude";
+            string bossName = "Dude";
             Boolean areNamesTheSame;
-             WriteLine("Enter your name");
+            WriteLine("Enter your name");
             name = ReadLine();
             WriteLine("Hello {0}! Enter the name of your boss", name);
             name = ReadLine();
@@ -126,8 +126,6 @@ namespace DebugExercises1
             WriteLine("Thank you {1}. The product of {2} and {3} is {4}",
             name, first, second, product);
 
-
-
         }
 
 
@@ -137,12 +135,12 @@ namespace DebugExercises1
 
         public void Two3()
         {
-            const double  WITHHOLDING_RATE =.15;
+            const double WITHHOLDING_RATE = .15;
             string hoursAsString, rateAsString;
             double hours, rate;
             double gross, net;
             //************************************************************
-            
+
             Write("Enter the number of hours you worked this week ");
             hoursAsString = ReadLine();
 
@@ -161,15 +159,29 @@ namespace DebugExercises1
 
             gross = hours * rate;
             net = gross - WITHHOLDING_RATE;
-            
-            WriteLine("You worked {0} hours at {1} per hour",
-            hours, rate.ToString(C));
+
+            WriteLine($"You worked {hours} hours at {rate} per hour",
+            hours, rate.ToString("C"));
             WriteLine("Gross pay is {0}", gross.ToString("C"));
             WriteLine("Net pay is {0}", net.ToString("C"));
         }
 
+        public void Two4()
+        {
+            string entry;
+            int enteredInteger;
+            int more;
+            int less;
+            Write("Enter an integer ");
+            entry = ReadLine();
+            WriteLine($"You entered {entry}");
+            enteredInteger = Convert.ToInt32(entry);
+            more = enteredInteger + 1;
+            less = enteredInteger - 1;
+            WriteLine($"One more than {enteredInteger} is {more} and one less than {enteredInteger} is {less}");
 
 
 
+        }
     }
 }
