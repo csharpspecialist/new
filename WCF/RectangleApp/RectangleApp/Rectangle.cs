@@ -42,10 +42,14 @@ namespace RectangleApp
 
             {
                 Rectangle show = new Rectangle();
-               
+
                 //show.GetArea();
+                Dealership now = new Dealership();
+                //now.
+                //now.List();
                 show.InsertValues();
                 show.Display();
+                
                 ReadKey();
 
                 Console.WriteLine("what's the best kind of sandwich");
