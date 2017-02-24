@@ -6,7 +6,8 @@ namespace RectangleApp
 {
     class Rectangle
     {
-
+        Dealership sgo = new Dealership();                
+              
         //variables
         double length;
         double width;
@@ -24,7 +25,7 @@ namespace RectangleApp
 
 
 
-        public void Display()
+        public void Display() //called 2nd
         {
             WriteLine("Length : {0}", length);
             WriteLine("Width : {0}", width);
@@ -37,6 +38,8 @@ namespace RectangleApp
             //string words = Console.ReadLine();                  
             
         class ExecuteRectangle
+
+            
         {
             static void Main(string[] args)
 
@@ -45,27 +48,65 @@ namespace RectangleApp
 
                 //show.GetArea();
                 Dealership now = new Dealership();
-                //now.
-                //now.List();
-                show.InsertValues();
-                show.Display();
                 
+              
+                show.InsertValues(); //called first
+                show.Display();//called 2nd
+                now.List(); //called 3rd
+                show.Bossman();
+                show.Miles();
                 ReadKey();
+                
 
-                Console.WriteLine("what's the best kind of sandwich");
 
-                string words = Console.ReadLine();
+               
             }
         }
 
-        public void Car()
+        public void Car() //called 4th
         {
-            Console.WriteLine("Do u like bowling??");
+             WriteLine("Do u like bowling??");
 
-            string bowl = Console.ReadLine();
+            string bowl = ReadLine();
 
-            Console.WriteLine($"Your answer was {bowl} means that u r a sissy!!!  a BIG SISSY");
+             WriteLine($"Your answer was {bowl}...that means that u r a sissy!!! \n a BIG SISSY");
         }
+
+        public void Bossman()
+        {
+             WriteLine("How many cars have u owned??");
+
+            string carAns = ReadLine();
+
+            int car = int.Parse(carAns);
+
+            string crush = (car < 5) ? "U r a Whippersnapper!!!" : "U r just getting revved Up!!!";
+            WriteLine(crush);
+
+            WriteLine("*****************");
+            WriteLine("Do U Like Chess??");
+
+            string gameAns = ReadLine().ToUpper();            
+
+            string playa = (gameAns == "YES") ?
+                "You know what time it is!!!" :
+                "U Don't have a clue";
+            WriteLine(playa);
+            WriteLine("This is a wrap!!!!");
+        }
+
+        public void Miles()
+        {
+            string name, bossName;
+            Boolean areNamesTheSame;
+            WriteLine("Enter your name");
+            name = ReadLine();
+            WriteLine($"Hello {name}! Enter the name of your boss");
+            bossName = ReadLine();
+            areNamesTheSame = name == bossName;
+            WriteLine($"It is {areNamesTheSame} that you are your own boss");
+        }
+
 
     }
 }
