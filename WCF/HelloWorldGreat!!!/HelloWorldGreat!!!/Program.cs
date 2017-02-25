@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using the line below aleviates the need to 
-// write Console everytime we write or read 
+//using the line below alleviates the need to 
+// write Console every time we write or read 
 //from the console!!!
 using static System.Console;
  
@@ -46,14 +46,28 @@ namespace HelloWorldGreat___
 
             Green();
 
+            Program style = new Program();
+
+            style.Working();
+
+            
+
         }
 
 
 
         public static void Green()
         {
-            WriteLine("Today is the 2md day of ");
+            WriteLine("Today is the 2nd day of ");
             ReadKey();
         }
+
+
+        public void Working()
+        {
+            WriteLine("There Can Be Only One!!!!");
+            ReadKey();
+        }
+
     }
 }
