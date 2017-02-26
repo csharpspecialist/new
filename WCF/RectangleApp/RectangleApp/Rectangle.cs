@@ -4,10 +4,10 @@ using static System.Console;
 
 namespace RectangleApp
 {
-    class Rectangle
+    public class Rectangle : Dealership  //inheriting from dealership class
     {
-        Dealership sgo = new Dealership();                
-              
+             
+        
         //variables
         double length;
         double width;
@@ -27,9 +27,10 @@ namespace RectangleApp
 
         public void Display() //called 2nd
         {
-            WriteLine("Length : {0}", length);
-            WriteLine("Width : {0}", width);
-            WriteLine("Area : {0}", GetArea());
+            //use of string interpolation
+            WriteLine($"Length : {length}");
+            WriteLine($"Width : {width}");
+            WriteLine($"Area : {GetArea()}");
             ReadKey();
 
         }
@@ -48,8 +49,8 @@ namespace RectangleApp
 
                 //show.GetArea();
                 Dealership now = new Dealership();
-                
-              
+
+               
                 show.InsertValues(); //called first
                 show.Display();//called 2nd
                 now.List(); //called 3rd
@@ -76,9 +77,12 @@ namespace RectangleApp
         {
              WriteLine("How many cars have u owned??");
 
-            string carAns = ReadLine();
+            //string carAns = ReadLine();
+            //int car = int.Parse(carAns);
 
-            int car = int.Parse(carAns);
+            //code below combines the above 2 steps
+            int car = int.Parse(ReadLine());
+            
 
             string crush = (car < 5) ? "U r a Whippersnapper!!!" : "U r just getting revved Up!!!";
             WriteLine(crush);
@@ -109,4 +113,14 @@ namespace RectangleApp
 
 
     }
+    //public class Square
+    //{
+    //    double length;
+    //    double width;
+
+    //    Rectangle shape = new Rectangle();
+
+    //    shape.
+
+    //}
 }

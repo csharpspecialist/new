@@ -7,8 +7,11 @@ using static System.Console;
 
 namespace RectangleApp
 {
-    class Dealership
-    {            
+    public class Dealership 
+    {
+        //creating 2 vars for inheritance practice
+        public int crush = 33; 
+        public double smash = 1022.22;
 
         public void List() //called 3rd
         {
@@ -43,9 +46,11 @@ namespace RectangleApp
             Detailers spree = new Detailers();
 
             WriteLine("I am thinking of a magic #");
-            string mnum = Console.ReadLine();
+           
+            //combining conversion & reading from console into 1 step
+            int newMNum = Convert.ToInt32(Console.ReadLine());
             
-            int newMNum = Convert.ToInt32(mnum);
+           //ternary practice
             int guess = 10;
             string answer = (newMNum == guess) ? "U r great!!!" : "Your name is muDD!!!";
             
