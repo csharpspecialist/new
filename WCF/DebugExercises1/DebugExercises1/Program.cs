@@ -172,14 +172,31 @@ namespace DebugExercises1
             string entry;
             int enteredInteger;
             int more;
-            int less;
+            int less; //created this variable to fix this
             Write("Enter an integer ");
             entry = ReadLine();
-            WriteLine($"You entered {entry}");
+            WriteLine($"You entered {entry}");//string interpolation fixed this
             enteredInteger = Convert.ToInt32(entry);
             more = enteredInteger + 1;
-            less = enteredInteger - 1;
+            less = enteredInteger - 1;  //changed from + to minus
             WriteLine($"One more than {enteredInteger} is {more} and one less than {enteredInteger} is {less}");
+
+
+
+        }
+
+        public void Two11()
+        {
+            string name, bossName;
+            Boolean areNamesTheSame;
+            WriteLine("Enter your name");
+            name = ReadLine();
+            WriteLine($"Hello {name}! Enter the name of your boss" );
+            bossName = ReadLine();
+            areNamesTheSame = (name == bossName);
+            WriteLine($"It is {areNamesTheSame} that you are your own boss" );
+
+
 
 
 
