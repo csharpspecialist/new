@@ -31,7 +31,7 @@ namespace RectangleApp
             WriteLine($"Length : {length}");
             WriteLine($"Width : {width}");
             WriteLine($"Area : {GetArea()}");
-            ReadKey();
+              ReadKey();
 
         }
             //Console.WriteLine("what's the best kind of sandwich");
@@ -45,20 +45,26 @@ namespace RectangleApp
             static void Main(string[] args)
 
             {
+
+                //WriteLine("give me an integer");
+
+                //double integerNum = Convert.ToDouble(ReadLine().ToUpper());
+
                 Rectangle show = new Rectangle();
 
                 //show.GetArea();
                 Dealership now = new Dealership();
-
+                Triangle tr = new Triangle();
                
-                show.InsertValues(); //called first
-                show.Display();//called 2nd
-                now.List(); //called 3rd
-                show.Bossman();
-                show.Miles();
-                ReadKey();
-                
+                ///show.InsertValues(); //called first
+              //  show.Display();//called 2nd
+                //now.List(); //called 3rd
+                //show.Bossman();
+               // show.Miles();
+                //ReadKey();
+                tr.ShowEverything();
 
+                //tr.AcceptValues();
 
                
             }
@@ -80,7 +86,7 @@ namespace RectangleApp
             //string carAns = ReadLine();
             //int car = int.Parse(carAns);
 
-            //code below combines the above 2 steps
+            //code below combines the above 2 lines of code into 1
             int car = int.Parse(ReadLine());
             
 
@@ -113,14 +119,5 @@ namespace RectangleApp
 
 
     }
-    //public class Square
-    //{
-    //    double length;
-    //    double width;
 
-    //    Rectangle shape = new Rectangle();
-
-    //    shape.
-
-    //}
 }

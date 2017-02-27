@@ -59,30 +59,32 @@ namespace RectangleApp
          
         //I cannot call any code that is written
         //here for some reason
-        class Detailers
+      
+        // i think I have to make a new class out here to
+        //make a class work
+
+    }
+
+    public class Detailers
+    {
+        public void Specials()
         {
-            public void Specials()
-            {
 
-            }
+        }
 
 
-            public void Mass()
-            {
-                int wimpy = 22;
-                int glee = 55;
-               // string igloo = "Clue";
+        public void Mass()
+        {
+            int wimpy = 22;
+            int glee = 55;
+            // string igloo = "Clue";
 
-                string food = ReadLine().ToUpper();
+            string food = ReadLine().ToUpper();
 
-                string dude = (glee > wimpy) ? "Cool" : "Not cool";
+            string dude = (glee > wimpy) ? "Cool" : "Not cool";
 
-                WriteLine(dude);
-                ReadKey();
-
-            }
-
-
+            WriteLine(dude);
+            ReadKey();
 
         }
 
@@ -93,5 +95,4 @@ namespace RectangleApp
 
 
 
-   
 }
