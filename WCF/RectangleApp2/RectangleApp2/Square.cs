@@ -14,8 +14,11 @@ namespace RectangleApp2
         {
             //needs to accept 2 values
             AcceptValues();
-            SquarRt();
+           
             WriteLine($"The area of the Square is {area}");
+        
+            SquarRt();
+
             WriteLine($"The square root of the Square is {squareRtValue}");
             ReadKey();
         }

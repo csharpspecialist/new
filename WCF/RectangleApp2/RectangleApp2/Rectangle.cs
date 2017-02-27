@@ -36,7 +36,7 @@ namespace RectangleApp2
             switch (shape)
             {
                 case "SQUARE":
-                    s.AcceptValues();
+                    s.SquareVal();
                     break;
 
                 case "RECTANGLE":

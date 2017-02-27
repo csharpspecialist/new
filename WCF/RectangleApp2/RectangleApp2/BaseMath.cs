@@ -18,11 +18,11 @@ namespace RectangleApp2
 
         public double AcceptValues()
         {
-            WriteLine($"Enter the {length} of the triangle ");
+            WriteLine($"Enter the length ");
 
             length = Convert.ToDouble(ReadLine());
 
-            WriteLine($"Enter the {width} of the triangle ");
+            WriteLine($"Enter the width ");
 
             width = Convert.ToDouble(ReadLine());
 
