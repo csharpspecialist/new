@@ -64,9 +64,8 @@ namespace RectangleApp
                 //ReadKey();
                 tr.ShowEverything();
 
-                //tr.AcceptValues();
-
-               
+                //tr.AcceptValues();       
+            
             }
         }
 

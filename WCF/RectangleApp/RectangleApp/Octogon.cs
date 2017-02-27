@@ -9,5 +9,18 @@ namespace RectangleApp
 {
     class Octogon
     {
+
+
+        double octolength;
+        double octoWidth;
+
+
+        public void GetInput()
+        {
+            WriteLine("What is the length of 1 of the sides of the octagon??");
+
+
+        }
+
     }
 }

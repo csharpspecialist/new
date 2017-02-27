@@ -44,6 +44,7 @@ namespace RectangleApp
             Rectangle dog = new Rectangle();
             dog.Car(); //called 4th
             Detailers spree = new Detailers();
+            spree.Specials();
 
             WriteLine("I am thinking of a magic #");
            
