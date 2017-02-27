@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{472EF178-F467-476C-9CAB-DF0CDB84AAB5}</ProjectGuid>
+    <ProjectGuid>{E0EFAE34-BDC1-4BAA-8297-7F347E24057F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RectangleApp</RootNamespace>
-    <AssemblyName>RectangleApp</AssemblyName>
+    <RootNamespace>InheritanceApp</RootNamespace>
+    <AssemblyName>InheritanceApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cars.cs" />
-    <Compile Include="Octogon.cs" />
-    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

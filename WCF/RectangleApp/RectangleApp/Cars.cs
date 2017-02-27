@@ -13,6 +13,10 @@ namespace RectangleApp
         public int crush = 33; 
         public double smash = 1022.22;
 
+       
+
+
+
         public void List() //called 3rd
         {
             WriteLine("which vehicle is your favorite");
@@ -57,13 +61,7 @@ namespace RectangleApp
             
             WriteLine(answer);
         }
-         
-        //I cannot call any code that is written
-        //here for some reason
-      
-        // i think I have to make a new class out here to
-        //make a class work
-
+              
     }
 
     public class Detailers
@@ -88,11 +86,15 @@ namespace RectangleApp
             ReadKey();
 
         }
-
-
+       
 
     }
 
+    public class Motor
+    {
+        public int v6;
+        public int v8;
+    }
 
 
 

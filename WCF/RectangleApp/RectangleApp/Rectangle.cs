@@ -9,8 +9,8 @@ namespace RectangleApp
              
         
         //variables
-        double length;
-        double width;
+        internal double length;
+        private double width;
 
         public void InsertValues()
         {
@@ -50,14 +50,14 @@ namespace RectangleApp
 
                 //double integerNum = Convert.ToDouble(ReadLine().ToUpper());
 
-                Rectangle show = new Rectangle();
-
+                //Rectangle show = new Rectangle();
+               
                 //show.GetArea();
                 Dealership now = new Dealership();
                 Triangle tr = new Triangle();
                
-                ///show.InsertValues(); //called first
-              //  show.Display();//called 2nd
+               // show.InsertValues(); //called first
+                //show.Display();//called 2nd
                 //now.List(); //called 3rd
                 //show.Bossman();
                // show.Miles();
