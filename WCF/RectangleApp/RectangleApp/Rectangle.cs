@@ -46,7 +46,7 @@ namespace RectangleApp
                 //show.GetArea();
                 Dealership now = new Dealership();
                 //now.
-                //now.List();
+                now.List();
                 show.InsertValues();
                 show.Display();
                 

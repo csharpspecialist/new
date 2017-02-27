@@ -57,7 +57,7 @@ namespace RectangleApp
             {
                 int wimpy = 22;
                 int glee = 55;
-                string gloo = "Clue";
+               // string gloo = "Clue";
 
                 string food = ReadLine().ToUpper();
 
