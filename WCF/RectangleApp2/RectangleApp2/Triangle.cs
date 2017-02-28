@@ -14,8 +14,11 @@ namespace RectangleApp2
         public void ShowEverything()
         {
             AcceptValues();
-            SquarRt();
+
             WriteLine($"The area of the Triangle is {area}");
+
+            SquarRt();
+
             WriteLine($"The square root of the Triangle is {squareRtValue}");
             ReadKey();
         }

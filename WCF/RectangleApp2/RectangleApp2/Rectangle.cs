@@ -13,9 +13,12 @@ namespace RectangleApp2
         public void RectangleVal()
         {
             AcceptValues();
+
+            WriteLine($"The area of the Rectangle is {area}");
+
             SquarRt();
-            WriteLine($"The area of the Square is {area}");
-            WriteLine($"The square root of the Square is {squareRtValue}");
+
+            WriteLine($"The square root of the Rectangle is {squareRtValue}");
             ReadKey();
 
         }        
@@ -40,20 +43,22 @@ namespace RectangleApp2
                     break;
 
                 case "RECTANGLE":
-                    r.AcceptValues();
+                    r.RectangleVal();
                     break;
 
-                case "OTAGON":
-                    o.AcceptValues();
+                case "OCTAGON":
+                    o.EightValue();
                     break;
 
                 case "TRIANGLE":
-                    t.AcceptValues();
+                    t.ShowEverything();
                     break;
                 default:
                     Write("We don't understand your choice");
                     break;
             }
+            Console.WriteLine("Thanks Anyway");
+            ReadKey();
 
         }
     }

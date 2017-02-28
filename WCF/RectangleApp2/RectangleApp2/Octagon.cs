@@ -13,8 +13,11 @@ namespace RectangleApp2
         {
 
             AcceptValues();
-            SquarRt();
+
             WriteLine($"The area of the Octagon is {area}");
+
+            SquarRt();
+
             WriteLine($"The square root of the Octagon is {squareRtValue}");
             ReadKey();
 
