@@ -35,6 +35,17 @@ namespace RectangleApp2
             return squareRtValue = Math.Sqrt(area);
         }
 
+        public void Thanks()
+        {
+            WriteLine("Thanks for using our fine program");
+            ReadKey();
+        }
+
+        public void WhatEver()
+        {
+            WriteLine("For which shape do u need to find the area ");
+            ReadKey();
+        }
 
     }
 }

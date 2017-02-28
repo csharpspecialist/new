@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace RectangleApp2
 {
     class Triangle : BaseMath
-    { 
-      
-      
+    {
+        BaseMath b = new BaseMath();
+
         public void ShowEverything()
         {
             AcceptValues();
@@ -21,6 +21,8 @@ namespace RectangleApp2
 
             WriteLine($"The square root of the Triangle is {squareRtValue}");
             ReadKey();
+
+            b.Thanks();
         }
 
     }
