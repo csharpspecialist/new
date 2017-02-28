@@ -34,7 +34,8 @@ namespace ConstructorPrac1
             Line game = new Line(); //the constructor is called right here!!!!!
             //before anything else!!!!!
             game.SetLength(6.0);
-            WriteLine($"Length of line{game.GetLength()}");
+            WriteLine($"Length of the line is {game.GetLength()}");
+            WriteLine($"Length of the line is {game.length}");
             ReadKey();
         }
     }
