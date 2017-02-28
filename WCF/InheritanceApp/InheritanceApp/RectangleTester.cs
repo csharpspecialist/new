@@ -19,8 +19,6 @@ namespace InheritanceApp
             WriteLine($"Total Area {r.GetArea()} ");
             ReadKey();
             
-
-
         }
     }
 
@@ -52,12 +50,6 @@ namespace InheritanceApp
         {
             return (width * height);
         }
-
-
-
-
-
-
 
     }
 
