@@ -9,9 +9,10 @@ namespace RectangleApp2
 {
     class Square : BaseMath
     {
-
+        BaseMath b = new BaseMath();
         public void SquareVal()
         {
+            
             //needs to accept 2 values
             AcceptValues();
            
@@ -21,6 +22,8 @@ namespace RectangleApp2
 
             WriteLine($"The square root of the Square is {squareRtValue}");
             ReadKey();
+
+            b.Thanks();
         }
 
 

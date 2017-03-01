@@ -29,7 +29,7 @@ namespace RectangleApp2
             Square s = new Square();
             Octagon o = new Octagon();
             Triangle t = new Triangle();
-
+            BaseMath b = new BaseMath();
 
             WriteLine("Which shape would you like to find the value of??");
 
@@ -54,10 +54,11 @@ namespace RectangleApp2
                     t.ShowEverything();
                     break;
                 default:
-                    Write("We don't understand your choice");
+                    Write("We don't understand your choice   ");
                     break;
             }
-            Console.WriteLine("Thanks Anyway");
+
+            WriteLine("Exiting the program Now!!!");
             ReadKey();
 
         }
