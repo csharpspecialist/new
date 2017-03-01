@@ -11,7 +11,8 @@ namespace ConsoleApplication1
     {
         //this enum must be created between the class name
         //and the first method...in other words ...right here!!
-        public enum teams
+        //don't make it public or private or any other access modifier!!!!
+        enum teams
         {
             Champs = 1,
             Cavs,

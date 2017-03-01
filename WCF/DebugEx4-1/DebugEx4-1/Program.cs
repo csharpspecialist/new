@@ -12,8 +12,11 @@ namespace DebugEx4_1
         static void Main(string[] args)
         {
             Debug4_3 four = new Debug4_3();
+            Debug4_4 plus = new Debug4_4();
 
+            plus.Smoothie();
             four.Tuition();
+
 
         }
         

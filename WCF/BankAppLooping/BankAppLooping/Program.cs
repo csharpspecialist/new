@@ -31,11 +31,8 @@ namespace BankAppLooping
 
             startBal = firstBal + bankBal;
 
-            WriteLine($"Your new balance is {startBal} " );            
-            
-
-     
-
+            WriteLine($"Your new balance is {startBal} " );    
+                
            
             for (rate = START_INT; rate <= LAST_INT; rate += INT_INCREASE)
             {
