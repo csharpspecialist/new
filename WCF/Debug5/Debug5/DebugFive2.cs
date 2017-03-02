@@ -10,7 +10,7 @@ class DebugFive2
     {
        public void Dos()
        {
-        
+            Beginning first = new Beginning();
         
           const int ITEM209 = 209;
           const int ITEM312 = 312;
@@ -18,7 +18,7 @@ class DebugFive2
           const double PRICE209 = 12.99, PRICE312 = 16.77, PRICE414 = 109.07;
           double price;
           int stockNum;
-          WriteLine("Please enter the stock number of the item you want ");
+          Write("Please enter the stock number of the item you want ");
             stockNum = Convert.ToInt16(ReadLine());
           while(stockNum != ITEM209 && stockNum != ITEM312 && stockNum != ITEM414)
           {
@@ -35,7 +35,22 @@ class DebugFive2
                 price = PRICE414;
           WriteLine($"The price for item # {stockNum} is {price.ToString("C")}");
             ReadKey();
-       }
+
+            WriteLine("Would you like to find another product??? \n  Y for Yes or N for No");
+            
+            string ans = ReadLine().ToUpper();
+
+            if (ans == "Y" || ans == "YES")
+            {
+                Beginning.Main();
+            }
+            else
+            {
+                Console.WriteLine("Have a nice day!!!!");
+                Environment.Exit(0);
+            }
+
+        }
 
     }
 }

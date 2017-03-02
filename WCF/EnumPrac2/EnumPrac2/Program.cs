@@ -45,6 +45,16 @@ namespace EnumPrac2
 
         }
 
+        enum Games
+        {
+            Halo = 1,
+            COD,
+            Rainbow6,
+            DeathStrike,
+            Titans,
+            Zelda
+
+        }
         static void Main(string[] args)
         {
 
@@ -129,6 +139,50 @@ namespace EnumPrac2
                     break;
             }
 
+
+            WriteLine("What's the best game ever!!");
+
+            int gameAns = Convert.ToInt16(ReadLine());
+
+            switch ((Games)gameAns)
+            {
+                case Games.Halo:
+                    break;
+                case Games.COD:
+                    break;
+                case Games.Rainbow6:
+                    break;
+                case Games.DeathStrike:
+                    break;
+                case Games.Titans:
+                    break;
+                case Games.Zelda:
+                    break;
+                default:
+                    break;
+            }
+
+            WriteLine("What's the best game that u ever played!!");
+
+            int bestGame = Convert.ToInt16(ReadLine());
+
+            switch ((Games)bestGame)
+            {
+                case Games.Halo:
+                    break;
+                case Games.COD:
+                    break;
+                case Games.Rainbow6:
+                    break;
+                case Games.DeathStrike:
+                    break;
+                case Games.Titans:
+                    break;
+                case Games.Zelda:
+                    break;
+                default:
+                    break;
+            }
         }
 
       

@@ -9,18 +9,17 @@ namespace Debug5
 {
     class Beginning
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             DebugFive1 one = new DebugFive1();
             DebugFive2 dva = new DebugFive2();
             DebugFive3 tre = new DebugFive3();
-            DebugFive4 q = new DebugFive4();
-            Tryparse t = new Tryparse();
+            DebugFive4 four = new DebugFive4();
 
-            //dva.Dos();
-           // t.Example();
-            //tre.Tres();
-            q.Quattro();
+           // one.One();
+           // dva.Dos();
+           //  tre.Tres();
+             four.Quattro();
         }
     }
 }

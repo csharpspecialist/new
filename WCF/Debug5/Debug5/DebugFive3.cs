@@ -18,7 +18,7 @@ class DebugFive3
         {
            if(number < NUMINROW)
               WriteLine();
-           Write("{0}{{1} ", letter, number.ToString());
+           Write($"{letter} {number.ToString("C")}");
         }
 
         ReadKey();

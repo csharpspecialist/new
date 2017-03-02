@@ -11,23 +11,22 @@ class DebugFive4
       const double START = 0.01;
       
       double total;
-      int howMany;
-      int count;
+      double howMany;
+      double count;
 
-      Write("How many days do you think ");
-      WriteLine("it will take you to reach");
-      Write("{0} starting with {1}",
-         LIMIT.ToString("C"), START.ToString("C"));
-      WriteLine("and doubling it every day?");
+      
+      WriteLine("How many days do you think \n it will take you to reach");
+      WriteLine($"{LIMIT.ToString()} starting with {START.ToString()} and doubling it every day?");
+      
      
-      howMany = Convert.ToInt32(ReadLine());
+      howMany = Convert.ToDouble(ReadLine());
       count = 0;
-      total = START;
+      total = START; 
 
-      while(total == LIMIT)
+      while(total < LIMIT) //changed from == to <
       {
          total = total * 2;
-         count = count + 1; 
+         ++count; 
       }
         if (howMany >= count)
             WriteLine("Your guess was too high.");
