@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace Debug6
 {
-    class Program
+    class Start
     {
         static void Main(string[] args)
         {
+            DebugSix01 one = new DebugSix01();
+
+            DebugSix02 two = new DebugSix02();
+
+
+            // one.Uno();
+            two.Dos();
+
         }
     }
 }
