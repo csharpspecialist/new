@@ -18,7 +18,7 @@ class DebugFive2
           const double PRICE209 = 12.99, PRICE312 = 16.77, PRICE414 = 109.07;
           double price;
           int stockNum;
-          Write("Please enter the stock number of the item you want ");
+          WriteLine("Please enter the stock number of the item you want ");
             stockNum = Convert.ToInt16(ReadLine());
           while(stockNum != ITEM209 && stockNum != ITEM312 && stockNum != ITEM414)
           {

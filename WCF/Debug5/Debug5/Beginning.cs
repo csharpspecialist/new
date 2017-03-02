@@ -13,9 +13,14 @@ namespace Debug5
         {
             DebugFive1 one = new DebugFive1();
             DebugFive2 dva = new DebugFive2();
+            DebugFive3 tre = new DebugFive3();
+            DebugFive4 q = new DebugFive4();
+            Tryparse t = new Tryparse();
 
-            dva.Dos();
-            
+            //dva.Dos();
+           // t.Example();
+            //tre.Tres();
+            q.Quattro();
         }
     }
 }

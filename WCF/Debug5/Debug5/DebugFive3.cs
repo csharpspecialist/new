@@ -14,11 +14,13 @@ class DebugFive3
       const int NUMINROW = 20;
 
       for(letter = 'A'; letter < 'Z'; ++letter)
-        for(number = LOW; number > HIGH; ++number)
+        for(number = LOW; number < HIGH; ++number)
         {
            if(number < NUMINROW)
               WriteLine();
-           Write("{0}{{1} ", letter, number.ToString("D2"));
+           Write("{0}{{1} ", letter, number.ToString());
         }
+
+        ReadKey();
    }
 }
