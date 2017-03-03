@@ -12,7 +12,7 @@ class DebugSeven3
 {
    static void Tres()
    {
-      int quantity;
+      double quantity;
       double price;
       quantity = GetQuantity();
       price = CalculatePrice(quantity);
@@ -49,4 +49,12 @@ class DebugSeven3
        price = price - price * discount;
        return price;
    }
+
+
+
+    //public double CovertQuantity()
+    //{
+
+    //    return CovertQuantity;
+    //}
 }

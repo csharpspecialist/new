@@ -21,8 +21,8 @@ class DebugSeven4
    }
    private static double FindMedian(int[] array)
    {
-        int[] middle = { 1, 2, 3, 4, 5, 6 };
-      double median;
+        int [] middle = { 1, 2, 3, 4, 5, 6 };
+      int median;
       middle = array.Length / 2;
       Array.Sort(array);
       if(array.Length % 2 == 0)
