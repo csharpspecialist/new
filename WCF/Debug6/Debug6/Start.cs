@@ -14,9 +14,13 @@ namespace Debug6
 
             DebugSix02 two = new DebugSix02();
 
+            DebugSix03 tre = new DebugSix03();
 
-            // one.Uno();
-            two.Dos();
+
+            //one.Uno();
+            // two.Dos();
+
+            tre.Tres();
 
         }
     }

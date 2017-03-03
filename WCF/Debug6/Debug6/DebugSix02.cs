@@ -8,16 +8,17 @@ class DebugSix02
       int x;
       double average;
       double total = 0;
-      Write("\nThe numbers are...");
+      Write("\n The numbers are...");
       for(x = 0; x < numbers.Length; ++x)
          Write("{0, 6}", numbers[x]);
       WriteLine();      
       for(x = 0; x < numbers.Length; ++x)
-      {
-         total = numbers[x];
+      {//changed the line below from a = to a += in order to sum up the numbers array  so that the average in line 19 worked properly
+         total += numbers[x];
       }   
       average = total / numbers.Length;
       Write($"The average is {average}");
+
         ReadLine();
    }
 }
