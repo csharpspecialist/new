@@ -15,19 +15,20 @@ class DebugSeven4
       WriteLine("The median value of the first array is {0}",
          FindMedian(firstArray));
       WriteLine("The median value of the second array is {0}",
-         FindMedian(secondArrray));
+         FindMedian(secondArray));
       WriteLine("The median value of the third array is {0}",
-         FindMediam(thirdArray));
+         FindMedian(thirdArray));
    }
    private static double FindMedian(int[] array)
    {
+        int[] middle = { 1, 2, 3, 4, 5, 6 };
       double median;
       middle = array.Length / 2;
       Array.Sort(array);
       if(array.Length % 2 == 0)
           median = (double)(array[middle - 1] + array[middle]) / 2;
       else
-          median = array[mid];
+          median = array[];
       return median;
    }
 }
