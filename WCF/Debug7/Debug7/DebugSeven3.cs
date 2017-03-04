@@ -12,7 +12,7 @@ class DebugSeven3
 {
    static void Tres()
    {
-      double quantity;
+      int quantity;
       double price;
       quantity = GetQuantity();
       price = CalculatePrice(quantity);
@@ -29,7 +29,7 @@ class DebugSeven3
 
         return quan;
    }
-   private double CalculatePrice(int quantityOrdered)
+   private static double CalculatePrice(int quantityOrdered)
    {
         int x;
        double PRICE_PER_ITEM = 6.00;
