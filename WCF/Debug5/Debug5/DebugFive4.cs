@@ -25,7 +25,7 @@ class DebugFive4
 
       while(total < LIMIT) //changed from == to <
       {
-         total = total * 2;
+         total = total * 2; 
          ++count; 
       }
         if (howMany >= count)
