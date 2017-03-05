@@ -8,10 +8,16 @@ class DebugSeven2
       string addressee = "Ms. Brooke Jefferson";
       int zipCode = 60007;
       string cityAndState = "Elk Grove, IL";
+
+
+       // string city = "Warren";
+
+
       AddressMethod(addressee, zipCode);
       WriteLine("-----------------------");
       AddressMethod(addressee, cityAndState);
       WriteLine("-----------------------");
+
    }
    private static void AddressMethod(string person, int num)
    {
@@ -21,7 +27,7 @@ class DebugSeven2
    private static void AddressMethod(string person, string city)
    {
       WriteLine("To : {0}", person);
-      WriteLine("{0}, city");
+      WriteLine($"{city}");
    }
 }
 

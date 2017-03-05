@@ -46,6 +46,7 @@
     <Compile Include="DebugSix01.cs" />
     <Compile Include="DebugSix02.cs" />
     <Compile Include="DebugSix03.cs" />
+    <Compile Include="DebugSix04.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
