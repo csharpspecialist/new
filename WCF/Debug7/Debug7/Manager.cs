@@ -23,8 +23,11 @@ namespace Debug7
             //WriteLine( sev.DisplayWebAddress(sev.things, sev.glory));
 
             DebugSeven2 two = new DebugSeven2();
+            DebugSeven3 three = new DebugSeven3();
 
-            two.Dos();
+             // two.Dos();
+
+            three.Tres();
 
             ReadKey();
 

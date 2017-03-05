@@ -10,7 +10,7 @@ using static System.Console;
 
 class DebugSeven3
 {
-   static void Tres()
+   public void Tres()
    {
       int quantity;
       double price;
@@ -18,13 +18,12 @@ class DebugSeven3
       price = CalculatePrice(quantity);
 
 
-      WriteLine("Final price for {0} items is {1}.",
-        quantity, price.ToString("c"));
+      WriteLine($"Final price for {quantity} items is {price.ToString("c")}.");
    }
    private static int GetQuantity()
    {
       
-      Write("Enter number of items >> ");
+      Write($"Enter number of items >> ");
       int quan = Convert.ToInt32(ReadLine());
 
         return quan;
