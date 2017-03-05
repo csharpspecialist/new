@@ -60,7 +60,7 @@ namespace BinaryArraySearch
         public static void Order()
         {
 
-            string [] cpu = { "Piledriver", "Excavator", "Bulldozer", "I - 7", "Core 2 Duo" };
+            string [] cpu = { "Pile driver", "Excavator", "Bulldozer", "I - 7", "Core 2 Duo" };
 
             WriteLine("Should we sort the array");
 
@@ -68,7 +68,7 @@ namespace BinaryArraySearch
 
             for (int i = 0; i < cpu.Length; i++)
             {
-                WriteLine("Cpu's in alphabetical order " + cpu[i]);
+                WriteLine("CPU's in alphabetical order " + cpu[i]);
             }
 
             ReadKey();
