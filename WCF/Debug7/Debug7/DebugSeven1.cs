@@ -14,7 +14,7 @@ public class DebugSeven1
 
     public int DisplayWebAddress(int num)
     {
-        int number = 0 + num;
+        int number = 27 + num;
         return number;
     }
 

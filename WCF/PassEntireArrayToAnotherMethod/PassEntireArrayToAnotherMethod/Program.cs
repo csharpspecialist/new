@@ -17,7 +17,7 @@ namespace PassEntireArrayToAnotherMethod
            */
             Program p = new Program();
 
-            int[] someNums = { 10, 12, 25, 35 };
+            int[] someNums = { 10 , 12 , 25 , 35 };
             int x;
 
             Console.WriteLine("At the beginning of the Main method");
@@ -45,11 +45,11 @@ namespace PassEntireArrayToAnotherMethod
         public void MethodGetsArray(int [] passedVal)
         {
             int x;
-            WriteLine("In MethodGetsArray() ");
+            Write("In MethodGetsArray() ");
 
             for ( x = 0; x < passedVal.Length; x++)
             {
-                WriteLine($"{passedVal[x]}");
+                Write($"{passedVal[x]}");
             }
             WriteLine();
 
@@ -57,7 +57,7 @@ namespace PassEntireArrayToAnotherMethod
             {
                 passedVal[x] = 888;
             }
-            WriteLine("After Change");
+            Write("After Change");
 
             for (x = 0; x < passedVal.Length; x++)
             {

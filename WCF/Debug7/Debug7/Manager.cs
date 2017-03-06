@@ -12,22 +12,24 @@ namespace Debug7
         static void Main(string[] args)
         {
 
-            //DebugSeven1 sev = new DebugSeven1();
+            DebugSeven1 sev = new DebugSeven1();
 
 
-            //sev.ShowWebAddress(); //bypasses privateness of displayWebAddress method
+            sev.ShowWebAddress(); //bypasses privateness of displayWebAddress method
 
-            //Console.WriteLine($"{sev.DisplayWebAddress(sev.num) }"); //calls the 1st overloaded DisplayWebAddresses implementation by passing in sev.num(which is a public property)
-            //Console.WriteLine($"{sev.DisplayWebAddress(sev.thinker,sev.smart) }"); //calls the 2nd overloaded DisplayWebAddresses implementation by passing in sev.things and sev.smart (which are public properties)
+            Console.WriteLine($"{sev.DisplayWebAddress(sev.num) }"); //calls the 1st overloaded DisplayWebAddresses implementation by passing in sev.num(which is a public property)
+            Console.WriteLine($"{sev.DisplayWebAddress(sev.thinker, sev.smart) }"); //calls the 2nd overloaded DisplayWebAddresses implementation by passing in sev.things and sev.smart (which are public properties)
 
-            //WriteLine( sev.DisplayWebAddress(sev.things, sev.glory));
+            WriteLine(sev.DisplayWebAddress(sev.things, sev.glory));
 
             DebugSeven2 two = new DebugSeven2();
             DebugSeven3 three = new DebugSeven3();
+            DebugSeven1 uno = new DebugSeven1();
 
+            
             // two.Dos();
 
-            three.Tres();
+            //three.Tres();
 
             ReadKey();
 
