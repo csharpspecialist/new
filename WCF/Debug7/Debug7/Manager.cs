@@ -27,7 +27,7 @@ namespace Debug7
             DebugSeven1 uno = new DebugSeven1();
 
             
-            // two.Dos();
+             two.Dos();
 
             //three.Tres();
 

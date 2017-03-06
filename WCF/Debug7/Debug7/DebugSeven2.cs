@@ -8,7 +8,7 @@ class DebugSeven2
       string addressee = "Ms. Brooke Jefferson";
       int zipCode = 60007;
       string cityAndState = "Elk Grove, IL";
-        string place = "Bahamas" ;
+       // string place = "Bahamas" ;
 
 
        // string city = "Warren";
@@ -18,8 +18,8 @@ class DebugSeven2
       WriteLine("-----------------------");
       AddressMethod(addressee, cityAndState);
       WriteLine("-----------------------");
-        AddressMethod(addressee, place);
-        WriteLine("-----------------------");
+        //AddressMethod(addressee, place);
+        //WriteLine("-----------------------");
 
     }
    private static void AddressMethod(string person, int num)
