@@ -25,7 +25,7 @@ namespace Debug7
             DebugSeven2 two = new DebugSeven2();
             DebugSeven3 three = new DebugSeven3();
 
-             // two.Dos();
+            // two.Dos();
 
             three.Tres();
 
