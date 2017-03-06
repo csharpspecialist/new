@@ -10,6 +10,24 @@ namespace OverridingDemo
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+
         }
     }
+
+    class BaseClass
+    {
+
+        public virtual void BaseMethod()
+        {
+
+        }
+
+
+    }
+
 }

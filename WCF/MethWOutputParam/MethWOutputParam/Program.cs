@@ -36,6 +36,8 @@ namespace MethWOutputParam
             one = Convert.ToInt32(s1);
             two = Convert.ToInt32(s2);
 
+
+
         }
         
 
