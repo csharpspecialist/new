@@ -51,7 +51,7 @@ namespace FindPriceWForLoop
                     isValidItem = true;
                     itemPrice = prices[x];
                     x = validVals.Length;
-                    /* adding line 34 above breaks us out
+                    /* adding line 53 above breaks us out
                      * of the loop when a match is found */
                 }
             }
