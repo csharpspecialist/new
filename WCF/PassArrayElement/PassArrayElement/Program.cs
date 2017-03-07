@@ -11,6 +11,10 @@ namespace PassArrayElement
     {
         static void Main(string[] args)
         {
+
+            /*this one is kind of tricky... put a break point on line 31 (where the 2nd loop starts)
+       * and step through the code using F11 to see how this works
+        */
             Program p = new Program();
            
             int[] someNums = { 10, 12, 25, 35 };
@@ -36,7 +40,7 @@ namespace PassArrayElement
             }
             ReadKey();
         }
-
+      
 
         public void MethodGetsOneInt(int oneVal)
         {
