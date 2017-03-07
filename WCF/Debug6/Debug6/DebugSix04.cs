@@ -8,10 +8,10 @@ class DebugSix04
    public void Quattro()
    {
       const int QUIT = 999;
-      int[] numbers = {10, 142, 88, 75, 90, 150};
-      int x;
+      int[] numbers = new int [20];
+      int x = 0;  //needs to be assigned a value here for line 24 to work properly
       int num;
-      double average;
+      double average = 0;
       double total = 0; 
          
         
@@ -34,7 +34,7 @@ class DebugSix04
         { 
           Console.Write("{0,6}", numbers[y]);
         
-        average = total / y;
+        average = total / x;
         }
         WriteLine();
       WriteLine($"The average is {average}");
