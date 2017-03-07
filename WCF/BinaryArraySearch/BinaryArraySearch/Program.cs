@@ -32,7 +32,7 @@ namespace BinaryArraySearch
             entryID = Convert.ToInt16(ReadLine());
 
             x = Array.BinarySearch(things, entryID);
-
+            Console.WriteLine(x);
             if (x < 0)
             {
                 WriteLine($"Your ID # of {entryID}..is not a valid id!!!");
