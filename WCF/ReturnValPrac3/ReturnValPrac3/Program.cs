@@ -13,25 +13,30 @@ namespace ReturnValPrac3
         {
 
             Program p = new Program();
-            Console.WriteLine("Enter the first # to add");
+            Console.WriteLine("what is your favorite food??");
+            string foodAns;
+            string food1 = Console.ReadLine();
 
-            int num1 = Convert.ToInt16(ReadLine());
+            Console.WriteLine("what is your 2nd favorite food??");
 
-            Console.WriteLine("Enter the 2nd # to add");
+            string food2 = Console.ReadLine();
 
-            int num2 = Convert.ToInt16(ReadLine());
+            p.FavFood(food1, food2);
 
-            p.MethodAdd(num1, num2);
+            foodAns = p.FavFood(food1, food2);
 
+            Console.WriteLine($"here is your fav food {foodAns}");
+
+            ReadKey();
         }
 
-        public int MethodAdd(int val1, int val2)
+
+        public string FavFood(string eating1 , string eating2)
         {
-
-            int answ = val1 * val2;
-
-            return answ;
+            string goodFood = eating1 + eating2;
+            return goodFood;
         }
+
 
     }
 }
