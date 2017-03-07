@@ -55,6 +55,19 @@ namespace EnumPrac2
             Zelda
 
         }
+
+
+        enum Chicken
+        {
+            Fried = 1,
+            Nuggets,
+            Fingers,
+            Grilled,
+            Sauted
+        }
+
+
+
         static void Main(string[] args)
         {
 
@@ -183,6 +196,28 @@ namespace EnumPrac2
                 default:
                     break;
             }
+
+            Console.WriteLine("What's the best type of Chicken");
+
+            int pollo =  Convert.ToInt16(Console.ReadLine());
+
+            switch ((Chicken)pollo)
+            {
+                case Chicken.Fried:
+                    break;
+                case Chicken.Nuggets:
+                    break;
+                case Chicken.Fingers:
+                    break;
+                case Chicken.Grilled:
+                    break;
+                case Chicken.Sauted:
+                    break;
+                default:
+                    break;
+            }
+
+
         }
 
       
