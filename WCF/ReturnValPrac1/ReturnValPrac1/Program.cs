@@ -9,11 +9,9 @@ namespace ReturnValPrac1
 {
     class Program
     {
-        double answ;
-        double val1;
-        double val2;
 
-        static void Main(string[] args)
+
+     static void Main(string[] args)
         {
             Program p = new Program();
             Work w = new Work();
@@ -57,17 +55,7 @@ namespace ReturnValPrac1
         public double width;
         public double height;
 
-        //public void GetWidth(double val1)
-        //{
-        //    width = val1;
-           
-        //}
-
-        //public void GetHeight(double val2)
-        //{
-        //    height = val2;
-           
-        //}
+    
 
 
         public double RetAns()
