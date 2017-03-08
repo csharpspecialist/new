@@ -9,7 +9,7 @@ namespace FlexArrayMethod
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Program p = new Program();
 
@@ -32,6 +32,9 @@ namespace FlexArrayMethod
             WriteLine("We have completely figured out your game!!!! \n" +
                 "Thanks for stopping by!!!");
             WriteLine();
+
+            p.Menu();
+            Console.WriteLine("*********************");
             ReadKey();
 
         }
@@ -47,6 +50,25 @@ namespace FlexArrayMethod
             Console.WriteLine($" \n The sum of the elements of the array is {dude} \n");
 
             //ReadKey();
+        }
+
+        public void Menu()
+        {
+            Console.WriteLine("  Would You Like To Try Again?? \n \n" +
+                "Y   or   N \n");
+            string answ = Console.ReadLine().ToUpper();
+
+
+            if (answ == "Y")
+            {
+                Main();
+            }
+            else
+            {
+                Console.WriteLine(" \n Thanks for using our program!!");
+            }
+
+            //make sure the main method looks like this   static void Main()
         }
     }
 }

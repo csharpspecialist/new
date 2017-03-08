@@ -13,10 +13,8 @@ namespace BinaryArraySearch
         {
 
             Search();
-            Order();
+            Order();           
             
-
-
         }
 
         public static void Search()
@@ -69,10 +67,19 @@ namespace BinaryArraySearch
             for (int i = 0; i < cpu.Length; i++)
             {
                 WriteLine("CPU's in alphabetical order " + cpu[i]);
-            }
-                        
+            }     
+
             ReadKey();
 
+
+     
         }
     }
+
+
+
+
+
+
+
 }
