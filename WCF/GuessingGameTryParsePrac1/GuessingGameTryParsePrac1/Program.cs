@@ -24,7 +24,6 @@ namespace GuessingGameTryParsePrac1
 
             do
             {
-
                 //Console.WriteLine("Welcome to the Guessing Game \n " + 
                 //"Enter a # between 1 and 21");
 
@@ -34,10 +33,9 @@ namespace GuessingGameTryParsePrac1
             {
                 Console.WriteLine("Invalid choice...please choose a valid # between 1 and 21");
                 choice = ReadLine();
-                    ++guessCounter;
+                    //++guessCounter;
 
             }
-
           
                 if (numChoice == mysteryNum)
                 {
