@@ -17,26 +17,26 @@ namespace ReturnValPrac2
 
             int total;
 
-            Console.WriteLine("Enter the first # to multiply");
+            WriteLine("Enter the first # to multiply");
 
             int num1 = Convert.ToInt16(ReadLine());
 
-            Console.WriteLine("Enter the first # to multiply");
+            WriteLine("Enter the second # to multiply");
 
             int num2 = Convert.ToInt16(ReadLine());
 
             p.Multiply(num1, num2);
 
-            total = p.Multiply(num1, num2);
+            total = p.Multiply(num1, num2);  //this line of code makes this work
 
-            Console.WriteLine(total);
+            WriteLine(total); //this works
 
-            Console.WriteLine(p.Multiply(num1,num1));
+            WriteLine(p.Multiply(num1,num1));//does not come up with right answer
 
             ReadKey();
         }
 
-        public int Multiply(int place1, int place2)
+        public int Multiply(int place1, int place2) 
         {
             int ans = place1 * place2;
 
