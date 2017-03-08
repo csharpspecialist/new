@@ -70,7 +70,7 @@ namespace BinaryArraySearch
             {
                 WriteLine("CPU's in alphabetical order " + cpu[i]);
             }
-
+                        
             ReadKey();
 
         }
