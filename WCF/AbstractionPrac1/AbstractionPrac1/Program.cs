@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace AbstractionPrac1
 {
@@ -11,47 +12,61 @@ namespace AbstractionPrac1
         static void Main(string[] args)
         {
 
+            Car speed = new Car();
+
+            WriteLine($"This is the mileage {speed.GetMileage()}");
+            ReadKey();
 
 
+            WriteLine($"This is the color {speed.GetColor()}");
+            ReadKey();
+
+            WriteLine($"Here is the formula {speed.StealFormula()}");
+            ReadKey();
         }
+
+
+
+
     }
 
-
-    //this was copied from the web...this helped me understand
-    //what I needed in order to write this by hand
-    abstract class ShapesClass
+    public class Car
     {
-        abstract public int Area();
+        public int mileage = 85;
+
+        public string color = "Red";
+
+        private string formula = "a * b";
+        public string StealFormula()
+        {
+            return Form();
+        }
+
+        private string Form()
+        {
+            return formula;
+        }
+
+        public int GetMileage()
+        {
+            return mileage;
+        }
+
+        public string GetColor()
+        {
+            return color;
+        }
+
+        private string GetEngineFormula()
+        {
+            return formula;
+        }
+
+        public string DisplayEngFormula()
+        {
+            return GetEngineFormula();
+        }
+
     }
-    class Square : ShapesClass
-    {
-        int side = 0;
 
-        public Square(int n)
-        {
-            side = n;
-        }
-        // Area method is required to avoid
-        // a compile-time error.
-        public override int Area()
-        {
-            return side * side;
-        }
-
-        static void Main()
-        {
-            Square sq = new Square(12);
-            Console.WriteLine("Area of the square = {0}", sq.Area());
-        }
-
-        interface I
-        {
-            void M();
-        }
-        abstract class C : I
-        {
-            public abstract void M();
-        }
-
-    }
 }
