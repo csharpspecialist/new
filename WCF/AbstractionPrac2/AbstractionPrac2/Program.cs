@@ -27,8 +27,11 @@ namespace AbstractionPrac2
        //just write the abstract method just like this above!!!!
     }
 
-    class Pepsi : Fastfood //you must inherit from Fastfood 
+   class Pepsi : Fastfood //you must inherit from Fastfood 
         //in order for this to work!!!!
+        /*the class above cannot be public!!!  Don't give it a
+         * access modifier!!!
+        */
 
     {
 
