@@ -41,7 +41,7 @@ namespace AbstractPrac4
 
      class Marvel : Hero
     {
-
+        public int payment = 25;
         private int equation = 5;
 
         public override string Justice()
@@ -54,7 +54,7 @@ namespace AbstractPrac4
         private int  Hulk()
         {
 
-           equation +=  10;
+           equation +=  payment;
 
             return equation; 
             
