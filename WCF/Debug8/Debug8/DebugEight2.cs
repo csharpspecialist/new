@@ -3,10 +3,10 @@
 using static System.Console;
 class DebugEight2
 {
-   static void Main()
+   static void Twooo()
    {
       int numericScore = 82;
-      string letterScore = B;
+      string letterScore = "B";
       Write("Score was {0}. ", numericScore);
       GiveBonus(ref numericScore);
       WriteLine("Now it is {0}.", numericScore);
