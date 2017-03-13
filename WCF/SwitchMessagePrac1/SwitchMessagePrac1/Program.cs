@@ -28,8 +28,7 @@ namespace SwitchMessagePrac1
 
             switch (player)
             {
-               
-
+                
                 case "FOOTBALL":
                     message = "Best Sport on the planet";
                     break;
@@ -52,6 +51,8 @@ namespace SwitchMessagePrac1
                     message = "That sport does not exist here";
                     break;
             }
+
+            Console.WriteLine(message);
             ReadLine();
         }
     }
