@@ -40,6 +40,10 @@ namespace Properties_FieldsPrac2
 
         public string LName { get; set; }
 
+
+
+
+
         public void EnterEmpId()
         {
             Console.WriteLine("Enter an Employee Id to add to the Database");
@@ -61,7 +65,6 @@ namespace Properties_FieldsPrac2
             IdNumber = realEmpNo;
             Console.WriteLine($"The new assigned idNumber has now been changed to... {IdNumber}");
             ReadLine();
-
 
         }
 
@@ -100,17 +103,12 @@ namespace Properties_FieldsPrac2
         public void ShowEmployeeInfo(Employee emp)
         {
             Console.WriteLine($"The information for employee # : {emp.IdNumber} is \n" +
-                $"First Name : {emp.FName} \n Last Name : {emp.LName} \n Dept # : {emp.Department}");
-
-          
-
-           
+                $"First Name : {emp.FName} \n Last Name : {emp.LName} \n Dept # : {emp.Department}");        
+                       
 
         }
 
-
-
-
+        
         //below is just practice with an enum
         public void StaffMember()
         {
@@ -150,8 +148,6 @@ namespace Properties_FieldsPrac2
 
         }
 
-
-
     }
 
     enum Faculty
@@ -163,7 +159,5 @@ namespace Properties_FieldsPrac2
         JANITOR
 
     }
-
-
 
 }
