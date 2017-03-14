@@ -23,7 +23,7 @@ namespace ReturnValPrac6
 
             int val2 = Convert.ToInt16(ReadLine());
 
-            p.Computer(val1, val2);
+            //line not needed...next line does everything!!  p.Computer(val1, val2);
 
             total = p.Computer(val2, val1);
 
