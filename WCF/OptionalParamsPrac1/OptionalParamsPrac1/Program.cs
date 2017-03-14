@@ -24,8 +24,16 @@ namespace OptionalParamsPrac1
             int mystNum2 = Convert.ToInt16(ReadLine());
 
             Console.WriteLine("Enter the optional number to multiply");
+            string tempNum = ReadLine();
 
-            int mystNum3 = Convert.ToInt16(ReadLine());
+            //int mystNum3 = Convert.ToInt16(ReadLine());
+
+            int mystNum3;
+
+            while (!int.TryParse(tempNum, out mystNum3))
+                {
+
+                }
 
             p.Mutlplier(mystNum1, mystNum2, mystNum3);
 
