@@ -17,6 +17,7 @@ namespace Properties_FieldsPrac2
             Employee lackey = new Employee();
             Teachers summer = new Teachers();
             summer.Grade();
+            Environment.Exit(0);
 
            // summer.StaffMember();
            // lackey.EnterEmpId();
@@ -99,9 +100,8 @@ namespace Properties_FieldsPrac2
         public void ShowEmployeeInfo(Employee emp)
         {
             Console.WriteLine($"The information for employee # : {emp.IdNumber} is \n" +
-                $"First Name : {emp.FName} \n Last Name : {emp.LName} \n Dept # : {emp.Department}");        
+                $"First Name : {emp.FName} \n Last Name : {emp.LName} \n Dept # : {emp.Department}");     
                        
-
         }
 
         

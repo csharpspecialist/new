@@ -25,13 +25,12 @@ namespace ReturnValPrac2
 
             int num2 = Convert.ToInt16(ReadLine());
 
-            p.Multiply(num1, num2);
+           //line not needed...next line completes this action!! p.Multiply(num1, num2);
 
             total = p.Multiply(num1, num2);  //this line of code makes this work
 
-            WriteLine(total); //this works
-
-            WriteLine(p.Multiply(num1,num1));//does not come up with right answer
+            WriteLine($"The sum of both numbers is {total}"); //this works
+        
 
             ReadKey();
         }
