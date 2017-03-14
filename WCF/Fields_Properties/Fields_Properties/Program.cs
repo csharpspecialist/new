@@ -15,16 +15,33 @@ namespace Fields_Properties
         {
             TwoEmployees twp = new TwoEmployees();
             Employee assistant = new Employee();
-            assistant.EnterEmpId();
-            twp.ShowMain();
-            
-            assistant.WelcomeMessage();
-            assistant.reno = 22;
-            
+            //assistant.EnterEmpId();
+            // twp.ShowMain();
 
-            Console.WriteLine(assistant.reno);
-            ReadKey();
+            //assistant.WelcomeMessage();
+            // assistant.reno = 22;
+            Program p = new Program();
 
+            p.Later();
+
+            //Console.WriteLine(assistant.reno);
+            //ReadKey();
+            //int[] items = { 1, 2, 22, 44 };
+
+
+            //foreach (var item in items)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Console.WriteLine(arrayslo);
+            //}
+
+            ReadLine();
         }
 
 

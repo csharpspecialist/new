@@ -27,7 +27,6 @@ namespace Properties_FieldsPrac2
 
     }
 
-
         class Employee
     {
 
@@ -39,10 +38,7 @@ namespace Properties_FieldsPrac2
         public string FName { get; set; }
 
         public string LName { get; set; }
-
-
-
-
+        
 
         public void EnterEmpId()
         {
