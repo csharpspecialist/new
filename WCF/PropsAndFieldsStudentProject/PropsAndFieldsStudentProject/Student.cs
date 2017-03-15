@@ -12,10 +12,15 @@ namespace PropsAndFieldsStudentProject
 
         private int idNumber;
         private string lastName;
+        private string firstName;
         private double gradePointAvg;
 
         public const double  HIGHEST_GPA = 4.0;
         public const double LOWEST_GPA = 0.0;
+
+        public string LastName { get; set; }
+
+        public string FirstName { get; set; }
 
 
         public int IdNumber
@@ -29,9 +34,7 @@ namespace PropsAndFieldsStudentProject
                 idNumber = value;
             }
             
-        }
-
-        public string LastName { get; set; }
+        }   
 
         public double GradePointAvg
         {
@@ -54,6 +57,7 @@ namespace PropsAndFieldsStudentProject
 
         }
 
+        
 
 
 
