@@ -15,6 +15,7 @@ namespace PropsAndFieldsStudentProject
             string show;
             Student oneScholar = new Student();
             Student twoScholar = new Student();
+            Student smartGuy = new Student();
 
             oneScholar.IdNumber = 100;
             oneScholar.LastName = "Wayne";
@@ -26,11 +27,17 @@ namespace PropsAndFieldsStudentProject
             twoScholar.LastName = "Stark";
             twoScholar.GradePointAvg = -5;
 
+            smartGuy.IdNumber = 300;
+            smartGuy.LastName = "Bruce";
+            smartGuy.FirstName = "Banner";
+            smartGuy.GradePointAvg = 3.5;
+
             p.ShowGpa(oneScholar);
             p.ShowGpa(twoScholar);
+            p.ShowGpa(smartGuy);
 
 
-           
+
             ReadLine();
             
         }

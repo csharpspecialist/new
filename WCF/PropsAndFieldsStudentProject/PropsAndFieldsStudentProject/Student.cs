@@ -47,9 +47,9 @@ namespace PropsAndFieldsStudentProject
             set
             {
                 if (value >= HIGHEST_GPA)
-                    gradePointAvg = 2.0;
+                    gradePointAvg = 2.1;
                 else if (value < 0)
-                    gradePointAvg = 0.0;
+                    gradePointAvg = 0.1;
                 else
                     gradePointAvg = value; 
 

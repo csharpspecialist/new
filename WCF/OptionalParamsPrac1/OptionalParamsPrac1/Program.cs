@@ -14,7 +14,11 @@ namespace OptionalParamsPrac1
             Program p = new Program();
 
             int finalNum;
+            int mystNum3 = 1;
             int total;
+
+
+
             Console.WriteLine("Enter the first number to multiply");
 
             int mystNum1 = Convert.ToInt16(ReadLine());
@@ -23,25 +27,27 @@ namespace OptionalParamsPrac1
 
             int mystNum2 = Convert.ToInt16(ReadLine());
 
-            Console.WriteLine("Enter the optional number to multiply");
-            string tempNum = ReadLine();
+            Console.WriteLine("Is there an optional number to multiply");
 
-            //int mystNum3 = Convert.ToInt16(ReadLine());
+            
+            string ans = ReadLine().ToUpper();
 
-            int mystNum3;
-
-            while (!int.TryParse(tempNum, out mystNum3))
-                {
-
-                }
+            if (ans == "Y")
+            {
+                Console.WriteLine("Enter the 3rd # to multiply");
+                mystNum3 = Convert.ToInt16(ReadLine());
+            }
+            else
+            {
+                p.Mutlplier(mystNum1, mystNum2,mystNum3);
+            }
+         
 
             p.Mutlplier(mystNum1, mystNum2, mystNum3);
 
             finalNum = p.Mutlplier(mystNum1, mystNum2,mystNum3);
             Console.WriteLine($"The sum of the 2 or 3 numbers you entered is {finalNum}");
-            ReadLine();
-
-            p.Adder(mystNum3, mystNum1, mystNum2);
+            ReadLine();           
 
             total = p.Adder(mystNum1, mystNum2, mystNum3);
 
