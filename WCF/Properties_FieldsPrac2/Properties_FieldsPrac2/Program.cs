@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
+
 namespace Properties_FieldsPrac2
 {
     class Program
@@ -17,10 +18,12 @@ namespace Properties_FieldsPrac2
             Employee lackey = new Employee();
             Teachers summer = new Teachers();
             summer.Grade();
-            Environment.Exit(0);
 
-           // summer.StaffMember();
-           // lackey.EnterEmpId();
+            
+            //Environment.Exit(0);
+
+            // summer.StaffMember();
+            // lackey.EnterEmpId();
 
             summer.ShowEmployeeInfo(lackey);
             
