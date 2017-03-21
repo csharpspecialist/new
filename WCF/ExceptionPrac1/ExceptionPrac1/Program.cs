@@ -13,10 +13,10 @@ namespace ExceptionPrac1
         static void Main(string[] args)
         {
             Program p = new Program();
-          
+             string year = DateTime.Now.Year.ToString();
 
             //p.GetMpg1();
-
+            Console.WriteLine($"The year is {year}");
             p.GetMpg2();
             p.GetMpg3();
 
