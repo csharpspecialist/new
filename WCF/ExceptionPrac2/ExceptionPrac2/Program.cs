@@ -13,8 +13,13 @@ namespace ExceptionPrac2
         {
 
             Program p = new Program();
-          //  p.GasException();
-            p.FirstTry();
+            //  p.GasException();
+
+            p.Excepdual();
+
+            //   p.FirstTry();
+
+
             Console.WriteLine("The program just kept going \n" +
                 "This is a good thing!!!");
 
@@ -88,13 +93,37 @@ namespace ExceptionPrac2
             }
 
             Console.WriteLine($"Your car gets {mpg} miles per gallon");
-            ReadLine();
-
-
+            ReadLine();            
 
         }
 
+        public void Excepdual()
+        {
+            int num = 11, denom = 0, result;
 
+            int[] arry = { 2, 5, 10 };
+
+            try
+            {
+                result = num / denom;
+                result = arry[num];
+            }
+            catch (DivideByZeroException d)
+            {
+                Console.WriteLine("We r in the Divby0 catch block!!");
+                Console.WriteLine(d.Message);
+            }
+            catch (IndexOutOfRangeException i)
+            {
+                Console.WriteLine("In the Index catch block");
+                Console.WriteLine(i.Message);
+            }
+
+            Console.WriteLine("Game over...we survived!!!!");
+            ReadLine();
+
+
+        }
 
 
     }
