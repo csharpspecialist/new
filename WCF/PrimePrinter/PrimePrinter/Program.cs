@@ -11,7 +11,8 @@ namespace PrimePrinter
     {
         static void Main()
         {
-            for (int i = 2; i <=100; i++)
+            int i = 2;
+            for (i = 2; i <=100; i++)
             {
                 if(i % 2 != 0)
                 {
@@ -23,6 +24,17 @@ namespace PrimePrinter
                 }
                 
             }
+
+            for (int a = 2; a <= i / 2; a++)
+            {
+                if (i % a == 0)
+                {
+                    Console.WriteLine(i + " is not prime number");
+                    return;
+                }
+
+            }
+            Console.WriteLine(i + " is a prime number");
 
             ReadLine();
         }
