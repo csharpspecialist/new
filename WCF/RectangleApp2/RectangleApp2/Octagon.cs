@@ -22,7 +22,7 @@ namespace RectangleApp2
             WriteLine($"The square root of the Octagon is {squareRtValue}");
             ReadKey();
 
-            b.Thanks();
+           // b.Thanks();
 
         }             
 
