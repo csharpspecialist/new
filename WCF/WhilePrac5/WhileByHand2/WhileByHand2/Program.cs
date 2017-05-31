@@ -10,7 +10,37 @@ namespace WhileByHand2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
+        {
+       
+
+            ArrayCheck();
+            Console.ReadKey();
+
+        }
+
+        public static char [] ArrayCheck()
+        {
+
+            char [] cars = { 'D', 'N', 'A', 'L', 'Y', 'H' };
+
+
+            Array.Reverse(cars);
+
+
+            foreach (char value in cars)
+            {
+                Console.WriteLine(value);
+            }
+            Console.WriteLine();
+
+
+            return (cars);
+        
+        }
+
+
+        public static void Guesser()
         {
             Random rnd = new Random();
 
@@ -23,19 +53,17 @@ namespace WhileByHand2
 
             newNum = Convert.ToInt16(ReadLine());
 
-            while(newNum != mysteryNem)
+            while (newNum != mysteryNem)
             {
                 Console.WriteLine($"Your guess of {newNum} was not the correct Guess \n Guess again");
                 newNum = Convert.ToInt16(ReadLine());
                 guessCount++;
-                 
+
             }
             WriteLine($"U Guessed the mystery # of {mysteryNem}!! \n U R a Winna!!!");
             WriteLine($"U Guessed {guessCount} Times");
             ReadLine();
-
-
-
         }
+    
     }
 }
