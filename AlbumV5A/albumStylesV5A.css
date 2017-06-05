@@ -1,0 +1,66 @@
+
+body {font-size: medium;
+	font-family: Serif;
+	background-color: #ccccff;
+	color: white;}
+
+
+h1{font-size: XX-large;
+	font-family: Serif;
+	text-align: center;
+	color: #9933cc;}
+
+p {text-indent: 1em;
+	text-align: justify;
+	background-color: black;
+	line-height: 150;}
+
+
+h1,h2 {
+    font-family: impact;
+	  font-style: oblique;
+	    font-weight: 100;
+
+}
+
+
+h3 {
+    color: maroon;
+    margin-left: 40px;
+
+}
+
+
+ul {
+    color: green;
+    margin-left: 10px;
+	font-style: italic;
+}
+
+
+
+a { text-decoration: none; }
+
+a:hover {
+
+color: aqua;
+font-family: cursive;
+text-decoration: underline;
+background-color: black;
+
+}
+
+ th {
+background-color: #9966CC;
+font-style: italic;
+ color: #DC143C;
+    margin-left: 2px;
+}
+
+
+.songs tr:nth-child(2n+0){
+  background-color:red;
+}
+.songs tr:nth-child(2n+1){
+  background-color:green;
+}
