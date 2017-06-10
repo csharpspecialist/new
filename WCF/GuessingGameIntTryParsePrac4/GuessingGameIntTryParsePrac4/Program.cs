@@ -55,8 +55,6 @@ namespace GuessingGameIntTryParsePrac4
 
             } while (mysteryN != realAns);
 
-
-
             p.Menu();
             ReadLine();
             
@@ -67,7 +65,6 @@ namespace GuessingGameIntTryParsePrac4
             Console.WriteLine("  Would You Like To Try Again?? \n \n" +
                 "Y   or   N \n");
             string answ = Console.ReadLine().ToUpper();
-
 
             if (answ == "Y")
             {
