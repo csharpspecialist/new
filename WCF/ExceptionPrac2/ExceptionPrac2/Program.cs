@@ -19,7 +19,6 @@ namespace ExceptionPrac2
 
             //   p.FirstTry();
 
-
             Console.WriteLine("The program just kept going \n" +
                 "This is a good thing!!!");
 
@@ -39,9 +38,7 @@ namespace ExceptionPrac2
 
             Console.WriteLine($"The answer is {answ} ");
 
-
         }
-
 
         public void GasException()
         {
@@ -59,11 +56,9 @@ namespace ExceptionPrac2
                 mpg = milesDriven / galsGas;                    
 
             Console.WriteLine($"Your car gets {mpg} miles per gallon");
-            ReadLine();
-            
+            ReadLine();            
 
         }
-
 
         public void FirstTry()
         {
