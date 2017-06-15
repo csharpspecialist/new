@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>  Icy Hot project  </title>
+
+<script type="text/javascript">
+
+var temp1
+// Given two temperatures, return true if one is less than 0 and
+// the other is greater than 100.
+
+var icyHot=function(temp1, temp2) {
+temp1 = document.getElementById("temp1").value;
+if(temp1 < 0)
+{
+  document.getElementById("words").innerHTML="Less Than Zero";
+}
+else {
+  alert("Who knew!!!!")
+}
+}
+
+</script>
+
+
+  </head>
+  <body>
+
+
+    <button name="cute" onclick="icyHot();"> Action </button>
+    <br> <br>
+
+    <input type="text" id="temp1"></input> <br> <br>
+    <input type="text" id="temp2"></input>
+    <div id="words"></div>
+<div id="total"></div>
+
+  </body>
+</html>
