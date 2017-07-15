@@ -11,7 +11,7 @@ namespace LoopArraySum
         static void Main(string[] args)
         {
             Program p = new Program();
-            int[] arr = new int[] { 1, 2, 3, 5 ,9, 66 };
+            int[] arr = new int[] { 1, 2, 3, 5 ,9, 66,14 };
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
