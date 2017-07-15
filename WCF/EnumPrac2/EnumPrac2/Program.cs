@@ -70,7 +70,7 @@ namespace EnumPrac2
 
         static void Main(string[] args)
         {
-
+            //shift up after tab tab to create switch structure
             int rank;
             //string message;
             WriteLine("which rank are you");
@@ -96,8 +96,8 @@ namespace EnumPrac2
         public void Grub()
         {
             int burgerChoice;
-            
 
+            //shift up after tab tab to create switch structure
             WriteLine("Which Burger is the best");
 
             burgerChoice = Convert.ToInt16(ReadLine());
@@ -127,7 +127,7 @@ namespace EnumPrac2
 
         public void Machines()
         {
-
+            //shift up after tab tab to create switch structure
             int vehicle;
 
             WriteLine("Which Car Manufacturer is your Favorite???");
@@ -152,7 +152,7 @@ namespace EnumPrac2
                     break;
             }
 
-
+            //shift up after tab tab to create switch structure
             WriteLine("What's the best game ever!!");
 
             int gameAns = Convert.ToInt16(ReadLine());
@@ -176,7 +176,7 @@ namespace EnumPrac2
             }
 
             WriteLine("What's the best game that u ever played!!");
-
+            //shift up after tab tab to create switch structure
             int bestGame = Convert.ToInt16(ReadLine());
 
             switch ((Games)bestGame)
@@ -198,7 +198,7 @@ namespace EnumPrac2
             }
 
             Console.WriteLine("What's the best type of Chicken");
-
+            //shift up after tab tab to create switch structure
             int pollo =  Convert.ToInt16(Console.ReadLine());
 
             switch ((Chicken)pollo)
