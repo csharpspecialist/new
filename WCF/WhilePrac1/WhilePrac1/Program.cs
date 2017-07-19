@@ -13,8 +13,8 @@ namespace WhilePrac1
         {
             Martian beta = new Martian();
 
-            // beta.SpaceGhost();
-            beta.BankAppLoop();
+             //beta.SpaceGhost();
+           // beta.BankAppLoop();
             ReadKey();
 
 
