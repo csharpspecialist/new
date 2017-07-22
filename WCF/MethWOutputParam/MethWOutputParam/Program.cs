@@ -36,10 +36,24 @@ namespace MethWOutputParam
             one = Convert.ToInt32(s1);
             two = Convert.ToInt32(s2);
 
-
+            Test.Change();
 
         }
         
 
     }
+
+
+    class Test
+    {
+        public static void Change()
+        {
+            Console.WriteLine("The time for change is close at hand");
+            Console.ReadLine();
+        }
+
+
+
+    }
+
 }
