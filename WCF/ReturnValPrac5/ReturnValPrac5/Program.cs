@@ -28,6 +28,29 @@ namespace ReturnValPrac5
             //Console.WriteLine($"The total is {totalInt}");
             //ReadKey();
 
+            
+            double dNum1, dNum2, dTotal; 
+            Console.WriteLine("First double # to multiply");
+            string initNum = Console.ReadLine();
+
+            double.TryParse(initNum, out dNum1);
+
+            Console.WriteLine("Second double # to multiply");
+            string secondNum = Console.ReadLine();
+
+            double.TryParse(secondNum, out dNum2);
+
+
+
+            p.Multi2(dNum1, dNum2);
+
+
+
+            Console.WriteLine($"The values are {dNum1} and {dNum2}");
+            ReadKey();
+
+
+
             int[] numeros = {10,12,45,66 };
 
             for (int i = 0; i < numeros.Length; i++)
@@ -48,5 +71,17 @@ namespace ReturnValPrac5
 
             return sum;
         }
+
+        public void Multi2(double dVal1, double dVal2)
+        {
+            dVal1 = 100;
+            dVal2 = 200;
+            
+        }
+
+
+
+
+
     }
 }
