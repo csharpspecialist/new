@@ -9,6 +9,7 @@ namespace BankApp1
      class Program
     {
         int balance = 500;
+        int updatedBalance;
 
         static void Main(string[] args)
         {
@@ -58,14 +59,14 @@ namespace BankApp1
            
             Console.WriteLine($"How much would you like to deposit??");
             int bAmount = Convert.ToInt16(Console.ReadLine());
-            int newBal = balance + bAmount;
+            updatedBalance = balance + bAmount;
 
             if(bAmount <= 0)
             {
-                Console.WriteLine("You need to enter a positive amount or beat it!!! ");
+                Console.WriteLine("You need to enter a positive amount or get lost!!! ");
             }
 
-            Console.WriteLine($"Your new balance is {balance}");
+            Console.WriteLine($"Your new balance is {updatedBalance}");
             Console.ReadLine();
         }
 
@@ -73,22 +74,55 @@ namespace BankApp1
 
         private void Withdraw()
         {
-            
+            int wAmount;
             Console.WriteLine($"How much would you like to withdraw??");
-            int wAmount = Convert.ToInt16(Console.ReadLine());
-            int newBal = balance - wAmount;
-            if (wAmount <= 0)
+            string withdrawal = Console.ReadLine();
+            int.TryParse(withdrawal, out wAmount);
+
+            updatedBalance = balance - wAmount;
+            if (wAmount >= 0)
+            {
+                Console.WriteLine($"Your new balance is {updatedBalance}  ");
+            }
+            else
             {
                 Console.WriteLine("You need to enter a positive amount or beat it!!! ");
             }
-
+            Console.ReadLine();
         }
 
         private void CBalance()
         {
            
-            Console.WriteLine($"Your account has {balance} in it ");
+            Console.WriteLine($"Your account has {updatedBalance} in it ");
             Console.ReadKey();
+        }
+
+        public void StartAgain()
+        {
+            Program p = new Program();
+
+            Console.WriteLine("Would you like to start the banking app over?? " +
+                " \n Y or Yes \n N or no");
+            string overAns = Console.ReadLine();
+
+            switch (overAns)
+            {
+                case "Y":
+                    p.Start();
+                    break;
+
+
+
+                default:
+                    Console.WriteLine("Thanks for using our application");
+                    Console.WriteLine("Have a nice day...\n Press any Key to continue");
+                    break;
+            }
+
+
+
+
         }
 
      
