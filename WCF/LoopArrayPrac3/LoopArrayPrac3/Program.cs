@@ -22,6 +22,19 @@ namespace LoopArrayPrac3
             Console.WriteLine($"The value of the array is {sum}");
 
             Console.ReadKey();
+
+            int[] pieces = { 22, 25, 77, 13, 51 };
+
+            for (int i = 0; i < pieces.Length; i++)
+            {
+
+                if(pieces[i] == 13)
+                {
+                    Console.WriteLine("We found 13");
+                }
+
+            }
+            Console.ReadLine();
         }
 
 

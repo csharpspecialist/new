@@ -107,8 +107,7 @@ namespace CarPayment_LoopsPrac1
             }
             Console.ReadLine();
         }
-
-
+        
 
     }
 }

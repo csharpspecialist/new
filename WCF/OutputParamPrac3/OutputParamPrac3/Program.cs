@@ -13,6 +13,9 @@ namespace OutputParamPrac3
         {
             Program p = new Program();
 
+            //did not write to the console the initial values
+            //to of uno and/or duo
+
             double uno;
 
             double duo;
@@ -33,13 +36,9 @@ namespace OutputParamPrac3
 
             second = Convert.ToInt16(ReadLine());
 
-
             double total = 0;
             double INT_RATE = .07;
-            double rate = 0;
-          
-
-          
+            double rate = 0;            
 
             total = first * second;
             rate += total * INT_RATE;

@@ -55,8 +55,7 @@ namespace GuessingGameIntTryParsePrac4
 
             } while (mysteryN != realAns);
 
-            p.Menu();
-            ReadLine();
+            p.Menu();           
             
         }        
 
@@ -74,7 +73,7 @@ namespace GuessingGameIntTryParsePrac4
             {
                 Console.WriteLine(" \n Thanks for using our program!!");
             }
-
+            ReadLine();
             //make sure the main method looks like this   static void Main()
             //and not like this---  static void Main (string [] args)
         }
