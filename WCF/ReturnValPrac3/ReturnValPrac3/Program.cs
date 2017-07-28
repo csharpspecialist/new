@@ -37,6 +37,5 @@ namespace ReturnValPrac3
             return goodFood;
         }
 
-
     }
 }
