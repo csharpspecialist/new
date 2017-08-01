@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AbstractPracticeApp2
 {
-   abstract class Hero
+   public abstract class Hero
     {
 
-        public abstract string Justice();       
+        public abstract string Justice();      
 
     }
     

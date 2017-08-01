@@ -14,7 +14,7 @@ namespace AbstractPracticeApp2
 
             int bravery;
             string speed;
-
+            
             speed = spidey.Justice();
             Console.WriteLine(speed);
 

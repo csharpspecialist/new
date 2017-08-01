@@ -11,8 +11,8 @@ namespace PropsAndFieldsStudentProject
     {
         static void Main(string[] args)
         {
-            Program p = new Program();
-            string show;
+           Program p = new Program();
+           // string show;
             Student oneScholar = new Student();
             Student twoScholar = new Student();
             Student smartGuy = new Student();
@@ -36,18 +36,13 @@ namespace PropsAndFieldsStudentProject
             p.ShowGpa(twoScholar);
             p.ShowGpa(smartGuy);
 
-
-
-            ReadLine();
-            
+            ReadLine();            
         }
 
         public void ShowGpa(Student st)
         {
 
-            Console.WriteLine($"The statistics of student # {st.IdNumber} \n are {st.FirstName}, {st.LastName}" + $" who has a GPA of {st.GradePointAvg} \n");
-
-
+            Console.WriteLine($"The statistics of student # {st.IdNumber} \n are {st.FirstName}, {st.LastName}" + $" who has a GPA of {st.GradePointAvg} \n");            
            
         }
 

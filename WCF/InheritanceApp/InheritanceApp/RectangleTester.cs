@@ -11,29 +11,24 @@ namespace InheritanceApp
     {
         static void Main(string[] args)
         {
-
             Rectangle r = new Rectangle();
 
             r.SetWidth(5);
             r.SetHeight(7);
             WriteLine($"Total Area {r.GetArea()} ");
-            ReadKey();
-            
+            ReadKey();            
         }
     }
-
 
     //Base class shape below
     class Shape
     {
-
         protected int width;
         protected int height;
 
         public void SetWidth(int w)
         {
-            width = w;
-            
+            width = w;            
         }
 
         public void SetHeight(int h)
