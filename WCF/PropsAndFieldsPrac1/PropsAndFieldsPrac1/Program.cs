@@ -97,7 +97,7 @@ namespace PropsAndFieldsPrac1
 
         public static void PrintDetails(AgeChecker d)
         {
-            Console.WriteLine($"my ID number is {d.IdNumber}, my name is {d.Name} and my age is {d.Age} and my weight is {d.Weight}");
+            Console.WriteLine($"my ID number is {d.IdNumber}, my name is {d.Name}, my age is {d.Age} and my weight is {d.Weight}");
 
         }
 
