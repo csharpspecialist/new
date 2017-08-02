@@ -6,10 +6,27 @@ using System.Threading.Tasks;
 
 namespace InterfacePractice1
 {
+
+    //IZap has 2 members!!!
+    //declared at namespace level!!!!
+    //outside of any/all classes!!!
+    public interface IZap
+    {
+        void Play();
+        void Surf();
+
+    }
+
     class Program
     {
-
-        public interface IWork
+    
+        /*
+         * IWork, IClean & IRun are declared inside of the Program class
+         * if you don't want to create a new class inside of the 
+         * program (Class Names) class then the interfaces must be declared at the 
+         * namespace level!!!!
+         * */
+        public  interface IWork 
         {
 
             void Printing();
@@ -51,14 +68,28 @@ namespace InterfacePractice1
 
         }
 
+        public class People : IZap
+        {
+            public void Play()
+            {
+                Console.WriteLine("The game has been cancelled!!!");
+            }
 
+           public void Surf()
+            {
+                Console.WriteLine("The waves are calm today");
+            }
+        }
 
 
         static void Main(string[] args)
         {
+            People p = new People();
             Names n = new Names();
             n.Display();
             n.Printing();
+            p.Surf();
+            p.Play();
 
             Console.ReadLine();       
             
