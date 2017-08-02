@@ -8,9 +8,9 @@ namespace InterfacePresentation1
 {
     class Program
     {
-     
 
-             public interface ITransactions
+
+        public interface ITransactions
         {
             // interface members
             void showTransaction();
@@ -22,13 +22,14 @@ namespace InterfacePresentation1
             private string tCode;
             private string date;
             private double amount;
-            public Transaction()
-            {
-                tCode = " ";
-                date = " ";
-                amount = 0.0;
-            }
+            //public Transaction()
+            //{
+            //    tCode = " ";
+            //    date = " ";
+            //    amount = 0.0;
+            //}
 
+            //constructor that takes 3 args
             public Transaction(string c, string d, double a)
             {
                 tCode = c;
@@ -54,13 +55,23 @@ namespace InterfacePresentation1
             {
                 Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
                 Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
+               // Transaction t3 = new Transaction();
+
+
+               // t3.showTransaction();
+
+
+
+
                 t1.showTransaction();
                 t2.showTransaction();
                 Console.ReadKey();
             }
+
+
+
+
         }
 
-
     }
-  
 }
