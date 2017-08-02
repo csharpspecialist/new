@@ -15,6 +15,7 @@ namespace PropsAndFieldsPrac1
 
             idNumber = 22;
             age = 10;
+
             Name = "Dude";
             weight = 205;
         }

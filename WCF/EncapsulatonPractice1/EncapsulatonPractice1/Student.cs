@@ -8,7 +8,7 @@ namespace EncapsulatonPractice1
 {
     class Student
     {
-      
+        
         private int idNumber;
         private string lastName;
         private string firstName;
