@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace InterfacePresentation1
 {
+    //All of this codeis inside of the program Class!!!!
     class Program
     {
-
+        /*dont create anything outside of the 
+         * program class or u will be sorry!!!!!
+        */
 
         public interface ITransactions
         {
@@ -16,7 +19,8 @@ namespace InterfacePresentation1
             void showTransaction();
             double getAmount();
         }
-
+        //the class Transaction must be inside of class program
+        //or this will not work!!!!!!
         public class Transaction : ITransactions
         {
             private string tCode;
@@ -48,7 +52,8 @@ namespace InterfacePresentation1
                 Console.WriteLine("Date: {0}", date);
                 Console.WriteLine("Amount: {0}", getAmount());
             }
-        }
+        }//the class tester must be inside of class program
+        //or this will not work!!!!!!
         class Tester
         {
             static void Main(string[] args)

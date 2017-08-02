@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractPracticeApp2
 {
-   public abstract class Hero
+   abstract class Hero
     {
 
         public abstract string Justice();      
