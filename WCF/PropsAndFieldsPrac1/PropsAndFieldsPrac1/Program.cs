@@ -10,14 +10,14 @@ namespace PropsAndFieldsPrac1
     public class AgeChecker
     {
 
-        public AgeChecker(int a, int b, string c, int d)
-        {
+        //public AgeChecker(int a, int b, string c, int d)
+        //{
 
-            idNumber = 22;
-            age = 10;
-            Name = "Dude";
-            weight = 205;
-        }
+        //    idNumber = 22;
+        //    age = 10;
+        //    Name = "Dude";
+        //    weight = 205;
+        //}
 
 
 
@@ -76,8 +76,8 @@ namespace PropsAndFieldsPrac1
 
         static void Main()
         {
-            AgeChecker a = new AgeChecker(2003, 36, "Houdini", 205);
-            // AgeChecker b = new AgeChecker();
+           // AgeChecker a = new AgeChecker(2003, 36, "Houdini", 205);
+            AgeChecker b = new AgeChecker();
 
             //a.Name = "Houdini";
             //a.Age = 36;
@@ -88,11 +88,20 @@ namespace PropsAndFieldsPrac1
             //b.Age = 27;
             //b.Weight = 225;
 
-            PrintDetails(a);
+          //  PrintDetails(a);
             //PrintDetails(b);
 
             Console.ReadLine();
 
+            int tempWeight;
+            Console.WriteLine("What is your wight");
+            string ageTemp = Console.ReadLine();
+
+            int.TryParse(ageTemp, out tempWeight);
+            b.Weight = tempWeight;
+
+            Console.WriteLine($"Your weight is {b.Weight}");
+            Console.ReadLine();
         }
 
         public static void PrintDetails(AgeChecker d)
