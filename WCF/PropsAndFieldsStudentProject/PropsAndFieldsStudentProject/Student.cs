@@ -9,7 +9,11 @@ namespace PropsAndFieldsStudentProject
 {
     class Student
     {
-        
+        /*u must create the private field first if u r going to manually create the getter and setter or
+         * fight with VS to make the case of each one work!!!!
+         * Use propfull then play with setters if/else or whatever rule u wish to implement!!!
+         * 
+         * */
         private int idNumber;
       //  private string lastName;
       //  private string firstName;
