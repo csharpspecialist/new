@@ -10,7 +10,7 @@ namespace PropsAndFieldsStudentProject
     class Student
     {
         /*u must create the private field first if u r going to manually create the getter and setter or
-         * fight with VS to make the case of each one work!!!!
+         * fight with VS to make the upper and lower case of each one work!!!!
          * Use propfull then play with setters if/else or whatever rule u wish to implement!!!
          * 
          * */
