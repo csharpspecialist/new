@@ -43,13 +43,14 @@ namespace InterfacePractice1
 
 
         public class Names : IWork, IClean, IRun
-        {
-             string coder = "nice";
+        {            
+             
             public void Printing()
             {
                 Console.WriteLine("I love Lucy");
-
+               
             }
+             
 
             public void Display()
             {
@@ -91,9 +92,8 @@ namespace InterfacePractice1
             p.Surf();
             p.Play();
 
-            Console.ReadLine();       
-            
-            
+            Console.ReadLine();
+     
         }
 
 
@@ -103,9 +103,7 @@ namespace InterfacePractice1
             
 
         }
-
-
-
+        
 
     }
 }

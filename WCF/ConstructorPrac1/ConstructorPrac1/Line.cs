@@ -63,7 +63,8 @@ namespace ConstructorPrac1
         ~Line()
         {
             System.Diagnostics.Trace.WriteLine("We are cleaning up our resources now!!!!");
+            Console.ReadKey();
         }
-
+        
     }
 }
