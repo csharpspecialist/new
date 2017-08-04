@@ -47,20 +47,31 @@ namespace ListPrac3
             cust.Add(c2);
             cust.Add(c3);
 
-            //foreach (Customr c in cust)
+
+            //Works fine also!!!!
+            //foreach (Customr item in cust)
             //{
-            //    Console.WriteLine(c.CustID.ToString(), c.FName, c.LName, c.Salary);
+            //    item.PrintHeros();
             //}
 
-            for (int i = 0; i < cust.Count; i++)
+            //works fine!!!!
+            foreach (Customr c in cust)
             {
-                Customr c = cust[i];
-                Console.WriteLine(c.CustID.ToString(),c.FName);
+                Console.WriteLine($"here {c.FName}");
             }
-           
+
+            //Does not work as it is right now!!!!
+            //for (int i = 0; i < cust.Count; i++)
+            //{
+            //    Customr c = cust[i];
+            //    Console.WriteLine(c.CustID.ToString(),c.FName);
+            //}
+
             ReadLine();
         }
     }
+
+
 
     class Customr
     {
@@ -69,7 +80,11 @@ namespace ListPrac3
         public string LName { get; set; }
         public double Salary { get; set; }
 
+        public void PrintHeros()
+        {
 
+            Console.WriteLine($"Hero ID,{CustID}, {FName},  {LName} {Salary}");
+        }
     }
 
 }

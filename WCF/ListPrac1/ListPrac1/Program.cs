@@ -18,6 +18,7 @@ namespace ListPrac1
             Automobile car1 = new Automobile();
 
             car1.AutoID = 100;
+            car1.Year = 2012;
             car1.Make = "Dodge";
             car1.Model = "Charger";
             car1.Miles = 32001;
@@ -25,6 +26,7 @@ namespace ListPrac1
             Automobile car2 = new Automobile();
 
             car2.AutoID = 200;
+            car2.Year = 2010;
             car2.Make = "Dodge";
             car2.Model = "Dart";
             car2.Miles = 39061;
@@ -32,29 +34,17 @@ namespace ListPrac1
             inventory.Add(car1);
             inventory.Add(car2);
 
-            Console.WriteLine($"The oldest car was build in {inventory[1]}");
+            //Console.WriteLine($"The oldest car was built in ");
             foreach (Automobile item in inventory)
             {
-                Console.WriteLine(item);
+                item.PrintList();
                 
             }
-
-            ReadLine();
+            Console.ReadLine();
 
 
         }
     }
 
-    class Automobile
-    {
-        public int AutoID { get; set; }
-        public string Make { get; set; }
-
-        public string Model { get; set; }
-
-        public int Miles { get; set; }
-
-
-
-    }
+   
 }

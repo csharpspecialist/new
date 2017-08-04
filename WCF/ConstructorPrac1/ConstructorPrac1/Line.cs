@@ -12,7 +12,7 @@ namespace ConstructorPrac1
     {
 
         private double length;  //Length of a line
-
+        
         public Line()
         {
             WriteLine("The constructor is working now!!!!");
@@ -24,18 +24,16 @@ namespace ConstructorPrac1
         }
 
         public double GetLength()
-        {
-            return length;
+        {       
+            return length; 
+
         }
 
         public static string GetData()
         {
             return "Dude...Whatever";
             
-
-        }
-
-  
+        }  
 
         static void Main(string[] args)
         {

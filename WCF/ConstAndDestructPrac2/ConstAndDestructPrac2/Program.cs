@@ -24,8 +24,19 @@ namespace ConstAndDestructPrac2
 
             Console.ReadLine();
 
-      
+
+            string blah = Golden();
+            Console.WriteLine(blah);
+            Console.ReadLine();
         }
+
+        public static string Golden()
+        {
+            string great = "Eat At Joe's";
+            return great;
+        }
+
+
     }
 
 
