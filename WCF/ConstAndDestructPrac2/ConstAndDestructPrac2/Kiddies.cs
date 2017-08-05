@@ -13,7 +13,7 @@ namespace ConstAndDestructPrac2
 
         /* you can only create 1 of the inherited constructor
          * inside of the derived class.  below I commented out the
-         * constructor that took in/used the int variables.
+         * constructor that took in/used the int variables in order to make this work/remove squigglies.
          * */
 
         //public Kiddies(): base(500, 1000)
