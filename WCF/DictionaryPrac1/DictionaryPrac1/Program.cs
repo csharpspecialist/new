@@ -26,6 +26,7 @@ namespace DictionaryPrac1
 
             foreach (KeyValuePair<int, Football> fballVal in ballClub)
             {
+
                 Console.WriteLine($"here {fballVal.Key} ");
                 Football fb = fballVal.Value;
                 //  Football ft = fballVal.Key;  //line of code does not work!!!!

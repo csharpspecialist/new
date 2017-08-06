@@ -21,7 +21,7 @@ namespace DictionaryPrac1
             Console.WriteLine($"Team ID number, {ID}, The {TeamName} of the {Conference} \n " +
             $"in the {Division} have a net worth of {NetWorth}.  ");
 
-
+            
         }
     }
 }

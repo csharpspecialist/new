@@ -13,8 +13,8 @@ namespace ExcepPrac3
         {
             Program er = new Program();
 
-           // er.Error1();
-            er.ArrayError();
+          // er.Error1();
+           er.ArrayError();
 
         }
 
@@ -51,7 +51,7 @@ namespace ExcepPrac3
 
 
             }
-            Console.WriteLine($"You get {mpg} Miles Per Gallon");
+            Console.WriteLine($"You still get {mpg} Miles Per Gallon \n but at least your code did not blow up!!!");
             ReadLine();
 
         }
@@ -65,6 +65,7 @@ namespace ExcepPrac3
 
             try
             {
+                //just trying some code that I know would not work!!!
                // result = num / denom;
                 result = ar[num];
 
@@ -79,8 +80,8 @@ namespace ExcepPrac3
 
             catch(IndexOutOfRangeException er)
             {
-                Console.WriteLine("In index out of range error block");
-                Console.WriteLine(er.Message);
+                Console.WriteLine("In the index out of range error block");
+                Console.WriteLine(er.Message);//default VS Error message
             }
 
             ReadLine();
@@ -131,7 +132,7 @@ namespace ExcepPrac3
 
     enum cars
     {
-
+    //just playing around with enums here!!!
         DODGE =1,
         FORD= 2,
         MAZDA = 3,
