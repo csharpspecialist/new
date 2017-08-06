@@ -48,7 +48,7 @@ namespace ExcepPrac3
                 mpg = 0;
                 Console.WriteLine("You attempted to divide by zero \n"
                     + " We r now in the catch block");
-
+                Console.WriteLine(e.Message);
 
             }
             Console.WriteLine($"You still get {mpg} Miles Per Gallon \n but at least your code did not blow up!!!");

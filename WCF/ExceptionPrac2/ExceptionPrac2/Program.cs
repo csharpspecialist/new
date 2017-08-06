@@ -15,9 +15,9 @@ namespace ExceptionPrac2
             Program p = new Program();
             //  p.GasException();
 
-            p.Excepdual();
+           // p.Excepdual();
 
-            //   p.FirstTry();
+               p.FirstTry();
 
             Console.WriteLine("The program just kept going \n" +
                 "This is a good thing!!!");
