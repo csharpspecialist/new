@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ListPrac1
 {
     class Automobile
-    {
+    { 
         public int AutoID { get; set; }
 
         public int Year { get; set; }
