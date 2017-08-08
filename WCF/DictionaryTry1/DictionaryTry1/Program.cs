@@ -11,7 +11,7 @@ namespace DictionaryTry1
     {
         static void Main(string[] args)
         {
-            DebugEight4.EightFour();
+           
 
             Dictionary<string, int> animals = new Dictionary<string, int>();
             
