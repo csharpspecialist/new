@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Antidote
 {
-    class Program
+   public class Business
     {
-        static void Main(string[] args)
+        static void Main()
         {
-
+            
             Console.WriteLine("We R Ready to rock right now!!!");
 
 
@@ -31,9 +32,18 @@ namespace Antidote
 
         public void Boxer()
         {
+
             Console.WriteLine("We Work to be the best that we can be");
 
         }
+
+        public int PerformAdding(int x, int y)
+        {
+
+
+            return x + y;
+        }
+
 
 
 

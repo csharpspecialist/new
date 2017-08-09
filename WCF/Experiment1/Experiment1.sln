@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experiment1", "Experiment1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antidote", "Antidote\Antidote.csproj", "{96B0060E-322B-440E-BA20-66C89C53F7DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intake", "Intake\Intake.csproj", "{13A90055-C4F2-44BB-BF3D-4DDEC80C1DB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{96B0060E-322B-440E-BA20-66C89C53F7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B0060E-322B-440E-BA20-66C89C53F7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B0060E-322B-440E-BA20-66C89C53F7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A90055-C4F2-44BB-BF3D-4DDEC80C1DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A90055-C4F2-44BB-BF3D-4DDEC80C1DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A90055-C4F2-44BB-BF3D-4DDEC80C1DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A90055-C4F2-44BB-BF3D-4DDEC80C1DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
