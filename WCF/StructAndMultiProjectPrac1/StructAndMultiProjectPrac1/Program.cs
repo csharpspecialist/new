@@ -8,11 +8,20 @@ namespace StructAndMultiProjectPrac1
 {
 
 
-    public class Master
+    public class Master  //THis must b public to see it from other project!!!!!
     {
 
         public int ID { get; set; }
         public string Name { get; set; }
+
+        public void Working()
+        {
+            Console.WriteLine("The work is being done here");
+
+
+        }
+
+
 
     }
     class Program
@@ -20,19 +29,14 @@ namespace StructAndMultiProjectPrac1
         static void Main(string[] args)
         {
 
-            int i = 0;
-
-            if(i == 0)
-            {
-                int j = 20;
+       
+                           
                 Master C1 = new Master();
                 C1.ID = 101;
                 C1.Name = "Dude"
            
 ;
-
-            }
-
+            //object initializer syntax!!!! started in C# 3.0
             Master C2 = new Master
             {
                 Name = "Mary",
@@ -65,11 +69,14 @@ namespace StructAndMultiProjectPrac1
 
         public class Apprentice : Master
         {
-
+            public int Grade { get; set; }
+            //below is called    object initializer syntax
             Apprentice k1 = new Apprentice
             {
                 ID = 2002,
-                Name = "Destro"
+                Name = "Destro",
+                Grade = 8
+                
 
             };
 
@@ -78,6 +85,19 @@ namespace StructAndMultiProjectPrac1
 
 
         }
+
+        /*
+         * you cannot inherit from a struct/use it as a base class. a struct is a value type
+         * a struct cannot have a return type.  a struct cannot have a destructor
+         * */
+        public struct Water
+        {
+
+            public int FirstID { get; set; }
+
+
+        }
+
 
     }
 }
