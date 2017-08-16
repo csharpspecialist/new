@@ -49,7 +49,6 @@ namespace ListPrac1
             }
             Console.ReadLine();
 
-
         }
     }
 
