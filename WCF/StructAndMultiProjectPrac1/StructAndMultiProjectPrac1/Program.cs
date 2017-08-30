@@ -18,23 +18,17 @@ namespace StructAndMultiProjectPrac1
         {
             Console.WriteLine("The work is being done here");
 
-
         }
-
-
 
     }
     class Program
     {
         static void Main(string[] args)
-        {
-
-       
+        {       
                            
                 Master C1 = new Master();
                 C1.ID = 101;
-                C1.Name = "Dude"
-           
+                C1.Name = "Dude"           
 ;
             //object initializer syntax!!!! started in C# 3.0
             Master C2 = new Master
@@ -44,14 +38,14 @@ namespace StructAndMultiProjectPrac1
 
             };
 
-
             Master C3 = new Master
             {
                 Name = "Franklin",
                 ID = 4251
 
             };
-
+            //the list must be inside of a method or this will not work!!!!
+            //the accessors can be outside of the method / created inside of the class...that's ok!!
             List<Master> people = new List<Master>();
 
             people.Add(C2);
@@ -61,7 +55,6 @@ namespace StructAndMultiProjectPrac1
             {
                 Console.WriteLine($"the name is {item.Name} and my id is {item.ID}");
             }
-
             
             Console.ReadLine();
         }
@@ -77,13 +70,8 @@ namespace StructAndMultiProjectPrac1
                 Name = "Destro",
                 Grade = 8
                 
-
             };
-
-
-
-
-
+            
         }
 
         /*
@@ -97,7 +85,6 @@ namespace StructAndMultiProjectPrac1
 
 
         }
-
 
     }
 }

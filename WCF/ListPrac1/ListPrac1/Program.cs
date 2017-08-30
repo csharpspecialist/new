@@ -42,6 +42,12 @@ namespace ListPrac1
             }
             Console.ReadLine();
 
+            //below is how it would have to be done using a for loop
+            for (int i = 0; i < inventory.Count; i++)
+            {
+                Console.WriteLine($"Listing of {inventory[i].Make}, {inventory[i].Model} is here");
+            }
+            Console.ReadLine();
 
         }
     }
