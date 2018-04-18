@@ -1,0 +1,47 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>This is a sample page</h2>
+        @{
+            DemoV3.Models.Product prod = ViewBag.prod;
+        }
+        <br />
+
+        <p>Product Id : @prod.ProductId</p>
+        <p>Product Name : @prod.ProductName</p>
+        <p>Product Code : @prod.ProductCode</p>
+        <p>Price : @prod.Price</p>
+    </div>
+</body>
+@DisplayList(new string[] { "hello", "time", "Saturday" })
+
+@DisplayList(new string[] { "Nice", "Smooth", "Football" })
+</html>
+
+
+
+@*here we created a custome helper that we can use over and over again.  But just in this view ONLY!!!*@
+@helper DisplayList(string[] arr)
+    {
+
+        <ul>
+            @foreach (var item in arr)
+            {
+                <li>@item</li>
+            }
+
+        </ul>
+}
+

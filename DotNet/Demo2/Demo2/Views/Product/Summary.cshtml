@@ -1,0 +1,44 @@
+﻿@using Demo2.Models
+@model List<Product>
+
+
+ @*below we are using a layout page that I created in the Shared folder...this is just for practice.*@
+@{
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+
+}
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Summary</title>
+</head>   since we r using the _Mylayout we don't need this code.
+<body>*@
+
+
+    <div>
+        <table border="1">
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Code</th>
+                <th>Color</th>
+                <th>Price</th>
+
+            </tr>
+            @foreach (var item in Model)
+            {
+ 
+                @Html.Partial("_ProductInfo", item)
+
+            }
+
+        </table>
+    </div>
+
+
+
+@*</body>
+</html>*@

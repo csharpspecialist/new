@@ -1,0 +1,33 @@
+﻿@*I tried to bring in the using statement above
+        but Pradeep showed the bottom one instead.
+    @using Demo2.Models      *@
+
+@model Demo2.Models.Product
+
+
+
+
+<tr style="background-color:cadetblue">
+    <td>
+        @Model.ProductId
+    </td>
+    <td>
+        @Model.ProductName
+    </td>
+    <td>
+        @Model.ProductCode
+    </td>
+    <td>
+        @Model.Color
+    </td>
+    <td>
+       @Html.Action("Discount", "Product", new { price = Model.Price })
+    </td>
+</tr>
+
+
+
+
+
+
+

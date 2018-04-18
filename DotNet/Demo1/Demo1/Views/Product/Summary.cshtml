@@ -1,0 +1,79 @@
+﻿@*using the using Demo1.Models below allows us to use viewbag and view data.  This is not a good practice since viewbag and viewdata compile at runtime and slow down your application tremendously in a large scale application.*@
+
+@using Demo1.Models
+
+
+@*using model List<Product> below gives us the strongly typing that we should use.  This corresponds to the 2nd table that begins in line 55 USE THIS ONE!!!!*@ 
+
+@model List<Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Summary</title>
+</head>
+<body>
+    <div>
+
+        @*         <tr>
+        <table border="1">
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Product Price</th>
+                </tr>
+               @foreach (var item in (List<Product>)ViewBag.products)
+            {
+                <tr>
+                    <td>
+                        @item.ProductId
+                    </td>
+                    <td>
+                        @item.ProductName
+                    </td>
+                    <td>
+                        @item.ProductCode
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+
+                </tr>
+        }
+
+
+
+        </table>    *@
+        <hr />
+
+        <table border="1">
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Code</th>
+                <th>Product Price</th>
+                <th>Product Color</th>
+            </tr>
+            @foreach (var item in Model)
+        {
+
+//this partial view below is located in the shared folder. If it were listed inside of a normal folder than we would have to list the controller name as well.
+
+
+  @Html.Partial("_ProductInfo",item)
+       }
+
+
+
+        </table>
+
+    </div>
+
+</body>
+</html>

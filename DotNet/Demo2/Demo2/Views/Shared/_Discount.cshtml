@@ -1,0 +1,18 @@
+﻿@Model decimal
+
+
+<span>
+    Price : @Model
+</span>
+<br />
+<span>   
+    10% Discount
+</span>
+
+<span>
+    @Html.Action("Testing", "Product")
+</span>
+
+@*above, in line 12 - 14, we r nesting another partial view into this partial view.  This shows an example of how do do it.*@
+
+

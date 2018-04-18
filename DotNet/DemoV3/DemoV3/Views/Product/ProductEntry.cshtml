@@ -1,0 +1,90 @@
+﻿@model DemoV3.ViewModels.ProductVM
+
+@using DemoV3.Custom
+
+
+@{
+    Layout = null;
+}
+
+@*the sequence of the jscript files below matters!!!
+    make sure that they are in this exact order!!!
+        if these 3 files are placed in your code then
+        the webpage does not have to be refreshed in order
+        for the server side validation to work!!!
+
+*@
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductEntry</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm("save", "product", FormMethod.Post))
+        {
+            //if you use line 34 then only server side validation will work!!
+            Html.EnableClientValidation(false);
+
+            <span>@Html.LabelFor(d => d.ProductId)</span>@Html.TextBoxFor(d => d.ProductId)
+            <br />
+            @*<span>Product Name:</span>@Html.TextBoxFor(s => s.ProductName)
+                @Html.ValidationMessage("ProdNameErr") @*this name ("ProdNameErr") must match the name in the controller in line 38 or this validation will not work*@
+            <br />
+
+            //@*This line above could also be written with a html.validationmesagefor as shown below
+            <span>Product Name:</span>@Html.TextBoxFor(s => s.ProductName)
+            @Html.ValidationMessageFor(s => s.ProductName)
+
+            <br />
+
+
+            <span>Product Code:</span>@Html.TextBoxFor(d => d.ProductCode)
+            @Html.ValidationMessageFor(s => s.ProductCode)
+            <br />
+            <span>Product Color:</span>@Html.TextBoxFor(s => s.Color) @Html.ValidationMessageFor(s => s.Color)
+            <br />
+
+            @*<span>Sizes...really colors though!!</span>
+                @Html.DropDownListFor(c => c.Size, (IEnumerable<SelectListItem>)ViewBag.Colors)
+                <br />*@
+
+            //TempData is better because its data can be passed between controller to view...viewbag above cannot
+            <span>Sizes...really colors though!!</span>
+            @Html.DropDownListFor(c => c.Styles, Model.Styles)
+
+
+            <br />
+
+
+
+            <span>Price:</span>@Html.TextBox("Price")
+            @Html.ValidationMessageFor(s => s.Price)
+            <br />
+            @Html.SubmitButton("Save")
+            @Html.ValidationSummary();
+
+        }
+
+
+        @*@using (Html.BeginForm("save", "product", FormMethod.Post))
+                {
+                    @Html.EditorForModel()
+
+                    @Html.SubmitButton("Save")
+            }*@
+
+
+
+
+    </div>
+</body>
+</html>

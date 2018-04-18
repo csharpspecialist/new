@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The This Keyword</title>
+
+    <link rel="stylesheet" href="styling/vendor.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.theme.css">
+
+<script  src="http://code.jquery.com/jquery-1.11.2.min.js"  ></script>
+<script type="text/javascript">
+
+$(document).ready(function (e)
+{
+
+
+// $("button").change(function ()  {
+//   var sum = 0;
+// $("button[name=pressMe]").each (function (){
+// sum = sum + parseInt($(this).val());
+
+// })
+//    //     $("div[name=total]").val(sum);
+
+//         $("input[name=totalSum]").val(sum);
+
+
+// });
+
+
+$("button").change(function ()  {
+  var top = 0;
+$("button[name=pressMe]").each (function (){
+top = top + parseInt($(this).val());
+
+})
+   //     $("div[name=total]").val(sum);
+
+        $("input[name=totalSum]").val(top);
+
+
+});
+
+
+
+// id="salsa" title="Very Spicy!!"
+
+
+})
+
+</script>
+</head>
+<body>
+
+<h2> Vending Machine Example  </h2>
+
+<div class="grid-container">
+    <button class="grid-item" name="pressMe" value="1.25" >Salsa Chips <br> $1.25</button>
+
+
+    <!-- <button class="grid-item" name="pressMe" id="salsa" title="Very Spicy!!" value="1.25" >Salsa Chips <br> $1.25</button> -->
+
+    <!-- <button class="grid-item" name="pressMe"  id="snick" title="# 1 Selling Candy Bar!" value=".85" >Snickers <br> $.85 </button>
+    <button class="grid-item" name="pressMe"  id="butter" title="Crspity Crunchity!!"value=".85" >Butterfinger <br> $.85 </button>
+    <button class="grid-item" name="pressMe"  id="milky" title="Creamy Chocolate!!" value=".85" >Milky Way <br> $.85 </button>
+    <button class="grid-item" name="pressMe"  id="pretzel" title="Sourdough Style!!" value="1.25" >Snyder's Pretzel <br> $1.25 </button>
+    <button class="grid-item" name="pressMe"  title="Choc Full Of Chips!!"  >Chips A Hoy <br> $ 1.50</button>
+    <button class="grid-item" name="pressMe"  title="For The Cheese Lovers!!" > Cheese & Crackers <br> $1.00 </button>
+    <button class="grid-item" name="pressMe"   title="Doubles Your Flavor!!" > Doublemint Gum <br> $.55  </button>
+    <button class="grid-item" name="pressMe"  title="Makes Your Mouth Fresh!!" >Spearamint Gum <br> $.55</button> -->
+  </div>
+  <!-- <button id="now">Now Button</button> -->
+<p> Your total is :
+<span id="completeSum"> </span>
+</p>
+<button id="all"> Total Chaos button</button>
+
+<p>
+<button id="alert"> Blow Up button</button>
+
+</p>
+
+
+
+<input type="text" name="totalSum"   >
+
+
+    <script src="jq/jquery331.min.js"></script>
+    <script src="jq/jquery-ui/jquery-ui.js"></script>
+
+    <script src="jq/vendor.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.grid-item:hover{
+background-color:lightgreen;
+}
+
+
+.form-control {
+
+width:350px;
+padding:12px;
+margin:8px 20px;
+display:inline-block;
+border-radius:1px solid #ccc;
+box-sizing:border-box;
+
+}
+
+
+output
+{
+
+height: 30px;
+display: block;
+padding-top: 20px;
+
+}
+
+
+fieldset
+{
+    border-radius:5px;
+background-color: lightcoral;
+padding:20px;
+width: 450px;
+margin:auto;
+}
+
+.clear
+{
+    font-size:1.6em;
+    width: 150px;
+    height: 135px;
+
+color: blue;
+
+}
+
+.calc
+{
+    font-size:1.6em;
+    width: 150px;
+    height: 135px;
+
+color: blue;
+
+}
+
+
+
+.calcButton
+{
+
+    font-size:1.6em;
+    width: 150px;
+    height: 135px;
+
+color: blue;
+
+}
+
+#around
+{
+  background-color: blue;
+}
+
+input
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+
+width: 100px;
+height: 85px;
+}
+
+.calculate
+{
+    font-size:1.6em;
+    width: 150px;
+    height: 135px;
+
+color: blue;
+
+}
+
+.display
+{
+
+}
+

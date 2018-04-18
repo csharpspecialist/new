@@ -1,0 +1,33 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product Index Page</title>
+</head>
+<body>
+
+    @{ 
+        Demo1.Models.Product prod = ViewBag.prod;
+    }
+    <div>
+        <h2> The Index page for the Product Controller</h2>
+
+
+        <p>Product ID : @prod.ProductId</p>
+        <p>Product Name : @prod.ProductName</p>
+        <p>Product Code : @prod.ProductCode</p>
+        <p>Product Price : @prod.Price</p>
+
+
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿@*the @model below makes this as strongly typed view*@
+@model Demo1.Models.Product
+
+@using Demo1.Custom
+
+@using Demo1.Models
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductEntry</title>
+</head>
+<body>
+    <div>
+        this is the normal html version of a post method
+
+        <form action="/product/save" method="post">
+
+            Product ID: <input type="text" name="ProductID" value="" />
+            <br />
+
+            Product Name: <input type="text" name="ProductName" />
+            <br />
+
+
+            Product Code: <input type="text" name="ProductCode" />
+            <br />
+
+
+            Price: <input type="text" name="Price" />
+            <br />
+
+            <input type="submit" value="Save" />
+
+            @*when we press save it will call the Save method in the controller that we created!!! In order to pass the parameters that this form sends the save method must take in the parameters as arguments!!! This is shown in line 51 of the product controller
+
+                This is shortened greatly by the line 58 save method in the product controller.
+            *@
+
+        </form>
+
+        these are called standard helpers.  Also using a html helper below, if the
+        route config file is changed this way below will still work.  Above, since we hard coded the controller and the save method, it would NOT work!!!
+
+        We must use the Using command here because we r creating a block of code...just do it!!
+
+        @*@using (Html.BeginForm("save", "Product", FormMethod.Post))
+        {
+
+            <span> Product ID:</span>@Html.TextBox("ProductID")
+            <br />
+
+            <span> Product Name:</span>@Html.TextBox("ProductName")
+            <br />
+            <span> Product Code:</span>@Html.TextBox("ProductCode")
+            <br />
+            <span> Price:</span>@Html.TextBox("Price")
+            <br />
+
+            <span> Color:</span>@Html.TextBox("Color")
+            <br />
+            @Html.SubmitButton("Save");
+
+        }*@
+
+        <hr />
+        @*this block below is utilizing the @model Demo1.Models.Product
+            on line 5 to make this a strongly typed model.  Since we r using it here we must make these textboxfor's and use lambda expressions...but now we have intellisense at the lambda expression!!!*@
+
+        @using (Html.BeginForm("save", "Product", FormMethod.Post))
+        {
+
+            <span> Product ID:</span>@Html.TextBoxFor(s => s.ProductId)
+            <br />
+
+            <span> Product Name:</span>@Html.TextBoxFor(s => s.ProductName)
+            <br />
+            <span> Product Code:</span>@Html.TextBoxFor(s => s.ProductCode)
+            <br />
+            <span> Price:</span>@Html.TextBox("Price")
+            <br />
+
+            <span> Color:</span>@Html.TextBoxFor(s => s.Color)
+            <br />
+            <input type="submit" value="Save" />
+
+        }
+
+        <hr />
+        @*this block below is utilizing the @model Demo1.Models.Product
+            on line 5 to make this a strongly typed model.  Since we r using it here we must make these textboxfor's and use lambda expressions...but now we have intellisense at the lambda expression!!!   This block uses the EditorFor and Editor HTML helper*@
+
+        @using (Html.BeginForm("save", "Product", FormMethod.Post))
+        {
+
+            <span> Product ID:</span>@Html.EditorFor(s => s.ProductId)
+            <br />
+
+            <span> Product Name:</span>@Html.EditorFor(s => s.ProductName)
+            <br />
+            <span> Product Code:</span>@Html.EditorFor(s => s.ProductCode)
+            <br />
+            <span> Price:</span>@Html.Editor("Price")
+            <br />
+
+            <span> Color:</span>@Html.EditorFor(s => s.Color)
+            <br />
+            <input type="submit" value="Save" />
+
+        }
+
+        <hr />
+        @*this block below is utilizing the @model Demo1.Models.Product
+            on line 5 to make this a strongly typed model.  Since we r using it here we must make these textboxfor's and use lambda expressions...but now we have intellisense at the lambda expression!!!   This block uses the EditorFor and Editor.  These are called templeted helpers.  they create textboxes, checkboxes and other types of controls based on data types that are being used.  *@
+
+        Templeted helpers below.
+
+        @using (Html.BeginForm("save", "Product", FormMethod.Post))
+        {
+
+            <span> Product ID:</span>@Html.EditorFor(s => s.ProductId)
+            <br />
+
+            <span> Product Name:</span>@Html.EditorFor(s => s.ProductName)
+            <br />
+            <span> Product Code:</span>@Html.EditorFor(s => s.ProductCode)
+            <br />
+            <span> Price:</span>@Html.Editor("Price")
+            <br />
+
+            <span> Color:</span>@Html.EditorFor(s => s.Color)
+            <br />
+            <input type="submit" value="Save" />
+
+        }
+
+
+
+        <hr />
+        @*this block below is utilizing the @model Demo1.Models.Product
+            on line 5 to make this a strongly typed model.  Since we r using it here we must make these textboxfor's and use lambda expressions...but now we have intellisense at the lambda expression!!!   This block uses the EditorFor and Editor.  These are called templeted helpers.  they create textboxes, checkboxes and other types of controls based on data types that are being used.  *@
+
+        Templeted helper below using the EditorForModel.  The issue using this helper is that it will show all of the fields from the model wheter you want to show them or not.  The way around this is to use data anotations in the model
+
+        @using (Html.BeginForm("save", "Product", FormMethod.Post))
+        {
+            @Html.EditorForModel()
+
+            @Html.SubmitButton("Submit");
+
+        }
+
+
+    </div>
+
+
+
+
+</body>
+</html>

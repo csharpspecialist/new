@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The This Keyword</title>
+
+    <link rel="stylesheet" href="styling/vendor.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jq/jquery-ui/jquery-ui.theme.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+
+<script  src="http://code.jquery.com/jquery-1.11.2.min.js"  ></script>
+<center>
+
+<table border="4">
+
+<tr>
+<td>
+
+<table id="around">
+
+    <tr>
+        <td> <button data-role="number" class="calcButton" value="1.25" >Snyder's Pretzels <br> $1.25</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >Snickers <br> $.85</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >Milky Way <br> $.85</button></td>
+    </tr>
+
+    <tr>
+        <td> <button data-role="number" class="calcButton" value="1.25" >Dorito's <br> $1.25</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >Hershey's  <br> $.85</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >Rollo <br> $.85</button></td>
+    </tr>
+
+    <tr>
+        <td> <button data-role="number" class="calcButton" value="1.25" >Bugles <br> $1.25</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >M & M's  <br> $            .85</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" >Lorna Doone  <br> $            .85</button></td>
+    </tr>
+
+    <tr>
+        <td> <button data-role="number" class="calcButton" value="1.25" title="Baked and not Fried..Better For Your Body" >Sun Chips <br> $1.25</button></td>
+        <td> <button data-role="number" class="calcButton" value=".85" title="Cookies And Cream...Delicious" >Oreo's <br> $.85</button></td>
+        <td> <button data-role="number" class="calcButton" title="An All Time Favorite" value=".85" >Rice Crispies<br> $.85</button></td>
+    </tr>
+
+    <tr>
+        <!-- <td> <input type="button" data-role="number" class="clear"value="C"></td> -->
+        <td> <button class="clear" value="C" title="Clears the Screen">Clear <br> </button></td>
+        <td> <button  class="calculate" value="=" >Subtotal </button>    </td>
+        <td> <button data-role="operator" class="calcButton" value="+">Add Another Item</button>    </td>
+    </tr>
+
+</table>
+<tr class="input-group">
+        <tr class="input-group-addon">$</tr>
+    <td colspan="1">
+    <input class="display"  type="text" style="width:415px;" size="30" name="Display" >
+
+    </td>
+    </tr>
+
+</td>
+
+
+</tr>
+<div class="display"></div>
+
+</table>
+
+</div>
+<div class="input-group">
+        <div class="input-group-addon">$</div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      </div>
+
+<!-- <tr>
+<td>Subtract:</td>
+<td><input type="text" name="substraction" id="substraction" readonly /></td>
+</tr> -->
+</table>
+</form>
+    <script src="jq/jquery331.min.js"></script>
+ <!-- <script src="jq/jquery-ui/jquery-ui.js"></script> -->
+
+    <script src="jq/calculator.js"></script>
+
+
+</body>
+</html>
